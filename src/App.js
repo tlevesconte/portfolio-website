@@ -10,12 +10,14 @@ import Footer from './components/sections/Footer';
 function App() {
   return (
     <div className='App'>
-      <Header />
-      <About />
-      <Education />
-      <Projects />
-      <Contact />
-      <Footer />
+      <div className='static max-w-4xl mx-auto'>
+        <Header />
+        <About />
+        <Education />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
