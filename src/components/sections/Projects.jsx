@@ -2,7 +2,9 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>Projects</div>
+    <section className='projects'>
+      <h1 className='font-bold'>Projects</h1>
+    </section>
   )
 }
 
