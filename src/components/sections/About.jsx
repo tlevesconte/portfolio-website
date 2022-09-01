@@ -3,6 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <section className='about'>
+      {/* About */}
       <h1 className='font-bold'>About</h1>
       <p>
         Hi, my name is Tomas and I’m a British/Swedish developer based in the UK. 
@@ -16,8 +17,12 @@ const About = () => {
       time and even some freelance web development work. These days I’m focused on learning 
       new technologies and improving on the ones I know.
       </p>
+
+      {/* Interests */}
       <h2 className='font-semibold'>Interests</h2>
       <p>Audiobooks, movies, motorbikes, running and gaming.</p>
+
+      {/* Skills */}
       <h2 className='font-semibold'>Skills</h2>
       <p>Java, JavaScript, React JS, HTML, CSS, MySQL, Wordpress</p>
     </section>

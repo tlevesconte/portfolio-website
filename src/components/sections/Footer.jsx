@@ -3,7 +3,10 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      Footer
+      {/* Footer */}
+      <p className='font-bold'>Footer</p>
+
+      {/* Add footer stuff here */}
     </footer>
   )
 }

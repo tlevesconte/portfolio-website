@@ -9,9 +9,9 @@ const Header = () => {
       {/* Bio */}
       <p className='text-center'>
         Aspiring 
-        <code className='font-bold'> Software Engineer </code>
+        <span className='font-bold'> Software Engineer </span>
         & 
-        <code className='font-bold'> CompSci Graduate</code>
+        <span className='font-bold'> CompSci Graduate</span>
       </p>
       <p className='text-center'>from South Wales, United Kingdom.</p>
 
