@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header>
+    <header className='py-[150px]'>
       {/* Heading */}
       <h1 className='text-center'>Tomas Le Vesconte</h1>
 
