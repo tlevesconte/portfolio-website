@@ -2,9 +2,9 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className='py-[150px]'>
+    <header>
       {/* Heading */}
-      <h1 className='text-center'>Tomas Le Vesconte</h1>
+      <h1 className='text-center text-4xl pb-5'>Tomas Le Vesconte</h1>
 
       {/* Bio */}
       <p className='text-center'>

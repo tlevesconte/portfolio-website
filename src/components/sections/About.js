@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section className='about'>
+    <section className='about pt-[150px]'>
       {/* About */}
       <h1 className='font-bold'>About</h1>
       <p>
