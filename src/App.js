@@ -1,21 +1,20 @@
 import React from 'react';
-import { Canvas } from '@react-three/fiber';
+// import { Canvas } from '@react-three/fiber';
+// import AsciiTorus from './3D/AsciiTorus';
+// import { PerspectiveCamera } from '@react-three/drei';
 
-import Header from './components/sections/Header';
-import About from './components/sections/About';
-import Education from './components/sections/Education';
-import Projects from './components/sections/Projects';
-import Contact from './components/sections/Contact';
-import Footer from './components/sections/Footer';
-import AsciiTorus from './3D/AsciiTorus';
-import { PerspectiveCamera } from '@react-three/drei';
+import { Header, About, Education, Projects, Contact, Footer } from './components/sections'
 
 function App() {
   return (
     <div className='App'>
+      {/* Placeholder Canvas */}
       <div className='canvas h-screen w-screen bg-[#111111]'></div>
+      {/* Mobile responsive container */}
+      <div className='container mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl'>
+      
       {/* Canvas object (AsciiTorus)*/}
-      {/* <div className='canvas h-[350px]'>
+      {/* <div className='canvas h-screen w-screen'>
         <Canvas>
           <color attach="background" args={['black']} />
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
@@ -26,16 +25,15 @@ function App() {
 
       {/* Header */}
       <Header />
-
-      {/* Container */}
-      <div className='static max-w-4xl mx-auto'>
         
-        {/* Sections */}
-        <About />
-        <Education />
-        <Projects />
-        <Contact />
-        <Footer />
+      {/* Sections */}
+      <About />
+      <Education />
+      <Projects />
+      <Contact />
+
+      {/* Footer */}
+      <Footer />
       </div>
     </div>
   );
