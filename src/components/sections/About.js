@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className='about pt-[150px]'>
       {/* About */}
-      <h1 className='font-bold'>About</h1>
+      <h2 className='text-2xl font-bold'>About</h2>
       <p>
         Hi, my name is Tomas and I’m a British/Swedish developer based in the UK. 
         My interest in software development first began when working on a programming 
@@ -19,11 +19,11 @@ const About = () => {
       </p>
 
       {/* Interests */}
-      <h2 className='font-semibold'>Interests</h2>
-      <p>Audiobooks, movies, motorbikes, running and gaming.</p>
+      <h3 className='font-semibold'>Interests</h3>
+      <p>Reading, audiobooks, movies, motorbikes, running and gaming.</p>
 
       {/* Skills */}
-      <h2 className='font-semibold'>Skills</h2>
+      <h3 className='font-semibold'>Skills</h3>
       <p>Java, JavaScript, React JS, HTML, CSS, MySQL, Wordpress</p>
     </section>
   )

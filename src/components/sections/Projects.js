@@ -2,9 +2,9 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <section className='projects'>
+    <section className='projects pt-[150px]'>
       {/* Projects */}
-      <h1 className='font-bold'>Projects</h1>
+      <h2 className='text-2xl font-bold'>Projects</h2>
 
       {/* Add projects here */}
     </section>
