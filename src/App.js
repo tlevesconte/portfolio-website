@@ -9,9 +9,15 @@ function App() {
   return (
     <div className='App'>
       {/* Placeholder Canvas */}
-      <div className='canvas h-screen w-screen bg-[#111111]'></div>
+      <div className='canvas h-screen w-screen bg-[#111111]'>
+        {/* Mobile responsive container */}
+        <div className='container mx-auto max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl'>
+          {/* Header */}
+          <Header />
+        </div>
+      </div>
       {/* Mobile responsive container */}
-      <div className='container mx-auto max-w-sm sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl'>
+      <div className='container mx-auto max-w-xs sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl'>
       
       {/* Canvas object (AsciiTorus)*/}
       {/* <div className='canvas h-screen w-screen'>
@@ -22,9 +28,6 @@ function App() {
           <AsciiTorus />
         </Canvas>
       </div> */}
-
-      {/* Header */}
-      <Header />
         
       {/* Sections */}
       <About />
