@@ -2,8 +2,9 @@ import React from 'react'
 
 const Education = () => {
   return (
-    <section className='education pt-[150px]'>
-      {/* Education */}
+    // Education section
+    <section id='education' className='pt-[150px]'>
+      {/* Header */}
       <h2 className='text-2xl font-bold'>Education</h2>
 
       {/* University 1 */}
