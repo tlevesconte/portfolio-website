@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    // Project sections
+    // Project section
     <section id='projects' className='pt-[150px]'>
       {/* Projects */}
       <h2 className='text-2xl font-bold'>Projects</h2>

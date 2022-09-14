@@ -5,7 +5,7 @@ const About = () => {
     // About section
     <section id='about' className='pt-[150px]'>
       {/* About */}
-      <h2 className='text-2xl font-bold'>About</h2>
+      <h2 className='text-2xl font-bold'>01. About</h2>
       <p>
         Hi, my name is Tomas and I’m a British/Swedish developer based in the UK. 
         My interest in software development first began when working on a programming 
