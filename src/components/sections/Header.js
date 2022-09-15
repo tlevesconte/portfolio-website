@@ -26,7 +26,7 @@ const Header = () => {
       <div id='hero-icons' className='flex flex-row justify-between text-xl'>
         <a id='github-icon' title='GitHub' href='https://github.com/tom-lv'><FontAwesomeIcon icon={faGithub} className='mx-4' /></a>
         <a id='linkedin-icon' title='LinkedIn' href='https://www.linkedin.com/in/tomas-l-853701195/'><FontAwesomeIcon icon={faLinkedin} className='mx-4' /></a>
-        <FontAwesomeIcon icon={faFileArrowDown} className='mx-4' />
+        <a id='cv-icon' title='CV'><FontAwesomeIcon icon={faFileArrowDown} className='mx-4' /></a>
         <a id='mail-icon' title='Email' href='mailto:tomas.levesconte@gmail.com'><FontAwesomeIcon icon={faEnvelope} className='mx-4' /></a>
       </div>
     </header>
