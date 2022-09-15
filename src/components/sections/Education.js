@@ -9,7 +9,7 @@ const Education = () => {
 
       {/* University 1 */}
       <h3 className='font-semibold'>Cardiff University</h3>
-      <p>October 2021 - October 2022</p>
+      <p>October 2021 - December 2022</p>
       <p className='font-semibold'>Master of Science - Msc, Software Engineering</p>
 
       {/* University 2 */}
