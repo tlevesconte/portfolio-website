@@ -1,4 +1,5 @@
 import React from 'react'
+
 import ProfilePicture from '../../assets/profile-picture.jpg'
 
 const About = () => {
@@ -6,10 +7,11 @@ const About = () => {
     // About section
     <section id='about' className='pt-[120px]'>
         {/* About Heading*/}
-        <h2 className='text-2xl font-medium mb-8'>
+        <h2 id='about-heading' className='text-2xl font-medium mb-9'>
           <span className='text-xl'>01. </span> 
           About Me
         </h2>
+
         {/* About Content */}
         <div id='about-content' className='flex flex-wrap justify-center  md:flex-nowrap '>
           {/* About Text */}
@@ -24,22 +26,34 @@ const About = () => {
             <p className='mt-3'>
             After completing the module, I found myself working on personal projects in my spare 
             time and even some freelance web development work. These days I’m focused on learning 
-            new technologies and improving on the ones I know. If you have an opportunity you'd like
+            new technologies and improving on the ones I already know. If you have an opportunity you'd like
             to discuss, don't hesitate to contact me! @ 
-            <a href='mailto:tomas.levesconte@gmail.com' className='font-medium hover:underline'> tomas.levesconte@gmail.com</a>
+            <span> </span> {/* Space */}
+            <a href='mailto:tomas.levesconte@gmail.com' className='font-medium hover:underline'>tomas.levesconte@gmail.com</a>
             </p>
 
-            {/* Interests */}
-            <h3 className='font-semibold mt-3'>Interests</h3>
-            <p>Reading, audiobooks, movies, motorbikes, running and gaming.</p>
-
             {/* Skills */}
-            <h3 className='font-semibold mt-3'>Skills</h3>
-            <p>Java, JavaScript, React JS, HTML, CSS, MySQL, Wordpress</p>
+            <p className='mt-3'>Here are some of the technologies I've used recently: </p>
+            <ul id='skills-list' className='flex flex-row mt-3'>
+              <div id='row-1'>
+                <li>• Java</li>
+                <li>• JavaScript</li>
+                <li>• React JS</li>
+              </div>             
+              <div id='row-2' className='ml-7'>
+                <li>• HTML</li>
+                <li>• CSS</li>
+                <li>• MySQL</li>
+              </div>
+              <div id='row-3' className='ml-7'>
+                <li>• Wordpress</li>
+              </div>  
+            </ul>
           </div>
+          
           {/* About Picture */}
-          <div id='about-picture' className='basis-41 max-w-[250px] max-h-[250px] grayscale hover:grayscale-0 pt-10 pl-0 md:pt-0 sm:pl-10'>
-            <img src={ProfilePicture} className='rounded-md' alt='Tomas Le Vesconte Profile Picture'></img>
+          <div id='about-picture' className='basis-41 max-w-[300px] max-h-[300px] grayscale hover:grayscale-0 pt-10 pl-0 md:pt-0 sm:pl-10'>
+            <img src={ProfilePicture} className='rounded-md' alt='Me'></img>
           </div>
         </div>
     </section>

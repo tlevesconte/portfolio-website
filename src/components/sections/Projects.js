@@ -2,10 +2,13 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    // Project section
+    // Projects section
     <section id='projects' className='pt-[150px]'>
-      {/* Projects */}
-      <h2 className='text-2xl font-bold'>Projects</h2>
+      {/* Projects Header */}
+      <h2 id='education-heading' className='text-2xl font-medium mb-9'>
+        <span className='text-xl'>03. </span> 
+        Projects
+      </h2>
 
       {/* Add projects here */}
     </section>

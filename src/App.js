@@ -17,7 +17,7 @@ function App() {
         </Canvas>
       </div>
       {/* Mobile responsive container */}
-      <div id='custom-container' className='mx-auto max-w-[20.5rem] sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-3xl'>
+      <div id='content-container' className='mx-auto max-w-[20.5rem] sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-3xl'>
 
         {/* Sections */}
         <About />

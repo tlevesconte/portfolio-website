@@ -5,7 +5,7 @@ const Footer = () => {
     // Footer section
     <footer className='pt-[150px]'>
       {/* Footer */}
-      <p className='font-bold'>Footer</p>
+      <p className='font-bold text-center'>Footer</p>
 
       {/* Add footer stuff here */}
     </footer>
