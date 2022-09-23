@@ -6,9 +6,9 @@ import { Header, About, Education, Projects, Contact, Footer } from './component
 
 function App() {
   return (
-    <div className='App font-montserrat'>
+    <div className='App font-montserrat text-[.9rem] leading-[1.35rem]'>
       {/* Hero-section */}
-      <div id='hero-section' className='w-screen h-screen bg-[#111111]'>
+      <div id='hero-section' className='w-screen h-screen sm:h-[65vh] bg-[#111111]'>
         {/* Header */}
         <Header />
         {/* Canvas */}

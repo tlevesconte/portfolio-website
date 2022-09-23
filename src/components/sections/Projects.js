@@ -6,7 +6,7 @@ const Projects = () => {
     <section id='projects' className='pt-[150px]'>
       {/* Projects Header */}
       <h2 id='education-heading' className='text-2xl font-medium mb-9'>
-        <span className='text-xl'>03. </span> 
+        <span className='text-xl font-normal'>03. </span> 
         Projects
       </h2>
 

@@ -8,12 +8,12 @@ const About = () => {
     <section id='about' className='pt-[120px]'>
         {/* About Heading*/}
         <h2 id='about-heading' className='text-2xl font-medium mb-9'>
-          <span className='text-xl'>01. </span> 
+          <span className='text-xl font-normal'>01. </span> 
           About Me
         </h2>
 
         {/* About Content */}
-        <div id='about-content' className='flex flex-wrap justify-center  md:flex-nowrap '>
+        <div id='about-content' className='flex flex-wrap justify-center  sm:flex-nowrap'>
           {/* About Text */}
           <div id='about-text' className='basis-[36rem]'>
             <p>
@@ -52,7 +52,7 @@ const About = () => {
           </div>
           
           {/* About Picture */}
-          <div id='about-picture' className='basis-41 max-w-[300px] max-h-[300px] grayscale hover:grayscale-0 pt-10 pl-0 md:pt-0 sm:pl-10'>
+          <div id='about-picture' className='basis-41 max-w-[225px] max-h-[225px] sm:max-w-[250px] sm:max-h-[250px] grayscale hover:grayscale-0 drop-shadow-2xl pt-10 pl-0 sm:pt-0 sm:pl-10'>
             <img src={ProfilePicture} className='rounded-md' alt='Me'></img>
           </div>
         </div>

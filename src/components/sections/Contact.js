@@ -7,16 +7,17 @@ const Contact = () => {
       {/* Contact Header */}
       
       <h2 id='education-heading' className='text-2xl font-medium mb-9'>
-        <span className='text-xl'>04. </span> 
+        <span className='text-xl font-normal'>04. </span> 
         Get In Touch
       </h2>
 
       <p className='max-w-lg'>
-        If you have an opportunity or would like to discuss something else, 
-        don't hesitate to contact me. Send me a message and I'll do my best 
+        If you have an opportunity you'd like to discuss, 
+        send me a message and I'll do my best 
         to get back to you.
       </p>
       {/* Button */}
+      <a className='mt-5 text-base border-solid border border-black rounded-md py-2 px-2' href='mailto:tomas.levesconte@gmail.com'>Message me!</a>
     </section>
   )
 }
