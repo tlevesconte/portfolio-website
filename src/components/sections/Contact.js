@@ -12,7 +12,7 @@ const Contact = () => {
       </h2>
 
       <p className='max-w-lg'>
-        If you have an opportunity you'd like to discuss, 
+        If you have something you'd like to discuss, 
         send me a message and I'll do my best 
         to get back to you.
       </p>

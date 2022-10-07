@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+// Assets
 import Cardiff from '../../assets/cardiff-university-logo.png'
 import CardiffMet from '../../assets/cardiff-met-logo.png'
 
@@ -33,13 +34,13 @@ const Education = () => {
             <img src={Cardiff} alt='Cardiff University Logo'></img>
           </div>
           <div id='cardiff-text'>
-            <h3 className='font-medium'>Cardiff University</h3>
+            <h3 className='font-semibold'>Cardiff University</h3>
             <p>October 2021 - Present</p>
-            <p className='font-medium italic'>Master of Science - MSc, Software Engineering</p>
+            <p className='font-medium italic'>Master of Science - MSc Software Engineering</p>
             {/* isActive1 ? 'mt-3 hidden text-sm' :  */}
             <ul className={'mt-3 text-sm'}>
               <li>
-                • Studied Agile Software Development, 
+                <span className='font-semibold'>• </span>Studied Agile Software Development, 
                 DevOps, Delivering User Experience, Testing, Web Applications and Data 
                 Manipulation.
               </li>
@@ -54,16 +55,16 @@ const Education = () => {
             <img src={CardiffMet} alt='Cardiff Met University Logo'></img>
           </div>
           <div id='cardiff-met-text'>
-            <h3 className='font-medium'>Cardiff Metropolitan University</h3>
+            <h3 className='font-semibold'>Cardiff Metropolitan University</h3>
             <p>September 2018 - June 2021</p>
-            <p className='font-medium italic'>Bachelor of Science - BSc (Hons), Computer Science</p>
+            <p className='font-medium italic'>Bachelor of Science - BSc (Hons) Computer Science</p>
             {/* isActive2 ? 'mt-3 hidden text-sm' :  */}
             <ul className={'mt-3 text-sm'}>
               <li className='mb-2'>
-                • Studied Artificial Intelligence, 
+                <span className='font-semibold'>• </span>Studied Artificial Intelligence, 
                 Software Engineering, Programming, Database Management and Networking.
               </li>
-              <li>• Graduated with a First Class Honours.</li>
+              <li><span className='font-semibold'>• </span>Graduated with a First Class Honours.</li>
             </ul>
             {/* <button onClick={handleToggle2} className='mt-3'>{isActive2 ? 'Read more' : 'Show less'}</button> */}
           </div>

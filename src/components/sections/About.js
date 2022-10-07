@@ -1,9 +1,11 @@
 import React from 'react'
 
+// FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { faJava, faJs, faReact, faHtml5, faCss3, faWordpress } from '@fortawesome/free-brands-svg-icons'
 
+// Assets
 import ProfilePicture from '../../assets/profile-picture.jpg'
 
 const About = () => {
@@ -39,17 +41,17 @@ const About = () => {
             {/* Skills */}
             <p className='mt-3'>Here are some of the technologies I've used recently: </p>
             <ul id='skills-list' className='flex flex-row mt-3'>
-              <div id='row-1'>
+              <div id='col-1'>
                 <li><FontAwesomeIcon icon={faJava}/> Java</li>
                 <li><FontAwesomeIcon icon={faJs}/> JavaScript</li>
                 <li><FontAwesomeIcon icon={faReact}/> React JS</li>
               </div>             
-              <div id='row-2' className='ml-7'>
+              <div id='col-2' className='ml-7'>
                 <li><FontAwesomeIcon icon={faHtml5}/> HTML</li>
                 <li><FontAwesomeIcon icon={faCss3}/> CSS</li>
                 <li><FontAwesomeIcon icon={faDatabase}/> MySQL</li>
               </div>
-              <div id='row-3' className='ml-7'>
+              <div id='col-3' className='ml-7'>
                 <li><FontAwesomeIcon icon={faWordpress}/> Wordpress</li>
               </div>  
             </ul>
