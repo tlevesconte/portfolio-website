@@ -22,7 +22,7 @@ const Education = () => {
     <section id='education' className='flex flex-col max-w-[600px] pt-[150px] mx-auto'>
       {/* Education Header */}
       <h2 id='education-heading' className='text-2xl font-medium mb-9'>
-        <span className='text-xl font-normal'>02. </span> 
+        <span className='text-xl font-normal text-gray-700'>02. </span> 
         Education
       </h2>
 

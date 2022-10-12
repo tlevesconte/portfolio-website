@@ -14,7 +14,7 @@ const About = () => {
     <section id='about' className='pt-[120px]'>
         {/* About Heading*/}
         <h2 id='about-heading' className='text-2xl font-medium mb-9'>
-          <span className='text-xl font-normal'>01. </span> 
+          <span className='text-xl font-normal text-gray-700'>01. </span> 
           About Me
         </h2>
 

@@ -12,7 +12,7 @@ const Projects = () => {
     <section id='projects' className='pt-[150px]'>
       {/* Projects Header */}
       <h2 id='education-heading' className='text-2xl font-medium mb-9'>
-        <span className='text-xl font-normal'>03. </span> 
+        <span className='text-xl font-normal text-gray-700'>03. </span> 
         Projects
       </h2>
 
@@ -30,6 +30,11 @@ const Projects = () => {
             </div>
             <p className='font-medium italic mb-2'>Web Application</p>
             <p>A minimalistic typing test inspired by Monkeytype.</p>
+            <div className='flex flex-row flex-wrap'>
+              <span className='rounded-md bg-gray-500 text-white py-1 px-2 mr-1 mt-2'>JavaScript</span>
+              <span className='rounded-md bg-gray-500 text-white py-1 px-2 mr-1 mt-2'>HTML</span>
+              <span className='rounded-md bg-gray-500 text-white py-1 px-2 mr-1 mt-2'>CSS</span>
+            </div>
           </figcaption>
         </figure>
 

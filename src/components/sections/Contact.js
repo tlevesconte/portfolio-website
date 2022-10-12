@@ -7,7 +7,7 @@ const Contact = () => {
       {/* Contact Header */}
       
       <h2 id='education-heading' className='text-2xl font-medium mb-9'>
-        <span className='text-xl font-normal'>04. </span> 
+        <span className='text-xl font-normal text-gray-700'>04. </span> 
         Get In Touch
       </h2>
 
@@ -17,7 +17,7 @@ const Contact = () => {
         to get back to you.
       </p>
       {/* Button */}
-      <a className='mt-5 text-base border-solid border border-black rounded-md py-2 px-2' href='mailto:tomas.levesconte@gmail.com'>Message me!</a>
+      <a className='mt-5 text-base text-white bg-gray-500 rounded-md py-2 px-2' href='mailto:tomas.levesconte@gmail.com'>Message me!</a>
     </section>
   )
 }
