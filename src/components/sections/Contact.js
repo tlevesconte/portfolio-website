@@ -13,11 +13,11 @@ const Contact = () => {
 
       <p className='max-w-lg'>
         If you have something you'd like to discuss, 
-        send me a message and I'll do my best 
+        chuck me a message and I'll do my best 
         to get back to you.
       </p>
       {/* Button */}
-      <a className='mt-5 text-base text-white bg-gray-500 rounded-md py-2 px-2' href='mailto:tomas.levesconte@gmail.com'>Message me!</a>
+      <a className='mt-5 text-base text-white bg-[#111111] rounded-md py-2 px-2' href='mailto:tomas.levesconte@gmail.com'>Message me!</a>
     </section>
   )
 }
