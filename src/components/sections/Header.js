@@ -9,9 +9,10 @@ const Header = () => {
     // Hero section
     <div id='header-section'>
       {/* Header section */}
-      <header className='absolute z-[100] flex flex-col justify-center items-center h-screen sm:h-[65vh] w-screen px-2 text-[#ffffff] text-center'>
+      <header className='absolute z-[100] flex flex-col justify-center items-center h-screen sm:h-[80vh] w-screen px-2 text-[#ffffff] text-center'>
+
       {/* Heading */}
-      <h1 className='mb-3 text-4xl sm:text-5xl md:text-6xl font-medium'>Tomas Le Vesconte</h1>
+      <h1 className='mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl'>Tomas Le Vesconte</h1>
 
       {/* Bio */}
       <p className='max-w-md mb-6'>

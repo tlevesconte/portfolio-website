@@ -11,17 +11,18 @@ import ProfilePicture from '../../assets/profile-picture.jpg'
 const About = () => {
   return (
     // About section
-    <section id='about' className='pt-[120px]'>
+    <section id='about' className='pt-[180px]'>
         {/* About Heading*/}
-        <h2 id='about-heading' className='text-2xl font-medium mb-9'>
-          <span className='text-xl font-normal text-gray-700'>01. </span> 
+        <h2 id='about-heading' className='flex items-center text-2xl font-semibold mb-9 text-[#b5b5b5]'>
+          <span id='number-prefix' className='mr-3 text-xl font-normal text-gray-700'>01. </span> 
           About Me
+          <div id='after-line' className='h-px w-[180px] sm:w-[130px] md:w-[220px] lg:w-[290px] bg-gray-700/30 ml-5'></div>
         </h2>
 
         {/* About Content */}
-        <div id='about-content' className='flex flex-wrap justify-center  sm:flex-nowrap'>
+        <div id='about-content' className='flex flex-wrap justify-center sm:flex-nowrap'>
           {/* About Text */}
-          <div id='about-text' className='basis-[36rem]'>
+          <div id='about-text' className='basis-[41rem]'>
             <p>
               Hi, my name is Tomas and I’m a British/Swedish developer based in the UK. 
               My interest in software development first began when working on a programming 
@@ -35,12 +36,12 @@ const About = () => {
             new technologies and improving on the ones I already know. If you have an opportunity you'd like
             to discuss, don't hesitate to contact me! @ 
             <span> </span> {/* Space */}
-            <a href='mailto:tomas.levesconte@gmail.com' className='font-medium hover:underline'>tomas.levesconte@gmail.com</a>
+            <a href='mailto:tomas.levesconte@gmail.com' className='font-bold hover:underline hover:text-[#fff]'>tomas.levesconte@gmail.com</a>
             </p>
 
             {/* Skills */}
             <p className='mt-3'>Here are some of the technologies I've used recently: </p>
-            <ul id='skills-list' className='flex flex-row mt-3'>
+            <ul id='skills-list' className='flex flex-row mt-3 text-[#aaa]'>
               <div id='col-1'>
                 <li><FontAwesomeIcon icon={faJava}/> Java</li>
                 <li><FontAwesomeIcon icon={faJs}/> JavaScript</li>

@@ -2,13 +2,15 @@ import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import IcosahedronDisplacement from './3D/IcosahedronDisplacement';
 
-import { Header, About, Education, Projects, Contact, Footer } from './components/sections'
+import { Header, About, Education, Projects, Contact, Footer, Navigation } from './components/sections'
 
 function App() {
   return (
-    <div className='App font-montserrat text-[.9rem] leading-[1.35rem]'>
+    <div className='App font-montserrat text-[.95rem] leading-[1.5] font-normal bg-[#191A1F]'>
+      {/* Navigation */}
+      {/* <Navigation /> */}
       {/* Hero-section */}
-      <div id='hero-section' className='w-screen h-screen sm:h-[65vh] bg-[#111111]'>
+      <div id='hero-section' className='w-screen h-screen sm:h-[80vh] bg-[#15161B]'>
         {/* Header */}
         <Header />
         {/* Canvas */}
@@ -17,7 +19,7 @@ function App() {
         </Canvas>
       </div>
       {/* Mobile responsive container */}
-      <div id='content-container' className='mx-auto max-w-[20.5rem] sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-3xl'>
+      <div id='content-container' className='mx-auto max-w-[24.5rem] sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl text-[#999]'>
 
         {/* Sections */}
         <About />

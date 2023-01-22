@@ -9,16 +9,17 @@ import Typer from '../../assets/typer-screenshot-in-browser.jpg'
 const Projects = () => {
   return (
     // Projects section
-    <section id='projects' className='pt-[150px]'>
+    <section id='projects' className='pt-[180px]'>
       {/* Projects Header */}
-      <h2 id='education-heading' className='text-2xl font-medium mb-9'>
-        <span className='text-xl font-normal text-gray-700'>03. </span> 
+      <h2 id='projects-heading' className='flex items-center text-2xl font-semibold mb-9 text-[#b5b5b5]'>
+        <span id='number-prefix' className='mr-3 text-xl font-normal text-gray-700'>03. </span> 
         Projects
+        <div id='after-line' className='h-px w-[180px] sm:w-[130px] md:w-[220px] lg:w-[290px] bg-gray-700/30 ml-5'></div>
       </h2>
 
       {/* Add projects here */}
       <div className='flex flex-row flex-wrap'>
-      <figure className='flex flex-col max-w-[360px] shadow-2xl mr-6'>
+      <figure className='flex flex-col max-w-[370px] shadow-2xl mr-6'>
           <img src={Typer} className='max-h-[240px]' alt='Typer'></img>
           <figcaption className='px-3 py-3'>
             <div className='flex flex-row justify-between'>
@@ -28,17 +29,17 @@ const Projects = () => {
                 <a className='text-xl' href='https://tom-lv.github.io/typer/'><FontAwesomeIcon icon={faLink}/></a>
               </div>
             </div>
-            <p className='font-medium italic mb-2'>Web Application</p>
+            <p className='mb-2 italic font-medium'>Web Application</p>
             <p>A minimalistic typing test inspired by Monkeytype.</p>
             <div className='flex flex-row flex-wrap'>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>JavaScript</span>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>HTML</span>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>CSS</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>JavaScript</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>HTML</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>CSS</span>
             </div>
           </figcaption>
         </figure>
 
-        <figure className='flex flex-col max-w-[360px] shadow-2xl ml-6'>
+        {/* <figure className='flex flex-col max-w-[360px] shadow-2xl ml-6'>
           <img src={Typer} className='max-h-[240px]' alt='Typer'></img>
           <figcaption className='px-3 py-3'>
             <div className='flex flex-row justify-between'>
@@ -48,12 +49,12 @@ const Projects = () => {
                 <a className='text-xl' href='https://tom-lv.github.io/typer/'><FontAwesomeIcon icon={faLink}/></a>
               </div>
             </div>
-            <p className='font-medium italic mb-2'>Web Application</p>
+            <p className='mb-2 italic font-medium'>Web Application</p>
             <p>A minimalistic typing test inspired by Monkeytype.</p>
             <div className='flex flex-row flex-wrap'>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>JavaScript</span>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>HTML</span>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>CSS</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>JavaScript</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>HTML</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>CSS</span>
             </div>
           </figcaption>
         </figure>
@@ -68,12 +69,12 @@ const Projects = () => {
                 <a className='text-xl' href='https://tom-lv.github.io/typer/'><FontAwesomeIcon icon={faLink}/></a>
               </div>
             </div>
-            <p className='font-medium italic mb-2'>Web Application</p>
+            <p className='mb-2 italic font-medium'>Web Application</p>
             <p>A minimalistic typing test inspired by Monkeytype.</p>
             <div className='flex flex-row flex-wrap'>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>JavaScript</span>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>HTML</span>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>CSS</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>JavaScript</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>HTML</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>CSS</span>
             </div>
           </figcaption>
         </figure>
@@ -88,15 +89,15 @@ const Projects = () => {
                 <a className='text-xl' href='https://tom-lv.github.io/typer/'><FontAwesomeIcon icon={faLink}/></a>
               </div>
             </div>
-            <p className='font-medium italic mb-2'>Web Application</p>
+            <p className='mb-2 italic font-medium'>Web Application</p>
             <p>A minimalistic typing test inspired by Monkeytype.</p>
             <div className='flex flex-row flex-wrap'>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>JavaScript</span>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>HTML</span>
-              <span className='font-semibold py-1 px-1 mr-1 mt-2'>CSS</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>JavaScript</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>HTML</span>
+              <span className='px-1 py-1 mt-2 mr-1 font-semibold'>CSS</span>
             </div>
           </figcaption>
-        </figure>
+        </figure> */}
       </div>
     </section>
   )
