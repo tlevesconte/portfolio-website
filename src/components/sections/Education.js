@@ -42,7 +42,7 @@ const Education = () => {
             <ul className={'mt-3 text-sm'}>
               <li>
                 <span className='font-semibold'>• </span>Studied Agile Software Development, 
-                DevOps, Delivering User Experience, Testing, Web Applications and Data 
+                DevOps, Delivering User Experience, Testing, Web Application Development and Data 
                 Manipulation.
               </li>
             </ul>
