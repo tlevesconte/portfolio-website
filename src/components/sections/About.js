@@ -1,19 +1,31 @@
-import React from 'react'
+import React, { useRef, useEffect }  from 'react'
 
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { faJava, faJs, faReact, faHtml5, faCss3, faWordpress } from '@fortawesome/free-brands-svg-icons'
 
+// Framer motion
+import { useInView } from "framer-motion"
+
 // Assets
 import ProfilePicture from '../../assets/profile-picture.jpg'
 
 const About = () => {
+
+  const ref = useRef(null)
+  const isInView = useInView(ref, { once: true })
+  
   return (
     // About section
-    <section id='about' className='pt-[180px]'>
+    <section id='about' className='pt-[200px]'
+    style={{
+      transform: isInView ? "none" : "translatey(5%)",
+      opacity: isInView ? 1 : 0,
+      transition: "all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s"
+    }}>
         {/* About Heading*/}
-        <h2 id='about-heading' className='flex items-center text-2xl font-semibold mb-9 text-[#b5b5b5]'>
+        <h2 ref={ref} id='about-heading' className='flex items-center text-2xl font-semibold mb-9 text-[#b5b5b5]'>
           <span id='number-prefix' className='mr-3 text-xl font-normal text-gray-700'>01. </span> 
           About Me
           <div id='after-line' className='h-px w-[180px] sm:w-[130px] md:w-[220px] lg:w-[290px] bg-gray-700/30 ml-5'></div>

@@ -6,7 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const Footer = () => {
   return (
     // Footer section
-    <footer className='flex flex-col justify-center items-center mx-auto pt-[180px] pb-[10px] mb-1'>
+    <footer className='flex flex-col justify-center items-center mx-auto pt-[200px] pb-[10px] mb-1'>
       {/* Footer */}
       {/* <p className='font-bold'>Footer</p> */}
       <div className='hover:text-[#fff]'>

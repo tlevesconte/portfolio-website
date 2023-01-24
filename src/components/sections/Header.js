@@ -9,7 +9,7 @@ const Header = () => {
     // Hero section
     <div id='header-section'>
       {/* Header section */}
-      <header className='absolute z-[100] flex flex-col justify-center items-center h-screen sm:h-[80vh] w-screen px-2 text-[#ffffff] text-center'>
+      <header className='absolute z-[100] flex flex-col justify-center items-center h-screen sm:h-[83vh] w-screen px-2 text-[#ffffff] text-center'>
 
       {/* Heading */}
       <h1 className='mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl'>Tomas Le Vesconte</h1>
