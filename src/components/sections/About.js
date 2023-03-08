@@ -1,4 +1,4 @@
-import React, { useRef, useEffect }  from 'react'
+import React, { useRef }  from 'react'
 
 // FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,7 +6,7 @@ import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import { faJava, faJs, faReact, faHtml5, faCss3, faWordpress } from '@fortawesome/free-brands-svg-icons'
 
 // Framer motion
-import { useInView } from "framer-motion"
+import { useInView } from 'framer-motion'
 
 // Assets
 import ProfilePicture from '../../assets/profile-picture.jpg'
@@ -28,11 +28,11 @@ const About = () => {
         <h2 ref={ref} id='about-heading' className='flex items-center text-2xl font-semibold mb-9 text-[#b5b5b5]'>
           <span id='number-prefix' className='mr-3 text-xl font-normal text-gray-700'>01. </span> 
           About Me
-          <div id='after-line' className='h-px w-[180px] sm:w-[130px] md:w-[220px] lg:w-[290px] bg-gray-700/30 ml-5'></div>
+          <div id='after-line' className='h-px w-[130px] sm:w-[130px] md:w-[220px] lg:w-[290px] bg-gray-700/30 ml-5'></div>
         </h2>
 
         {/* About Content */}
-        <div id='about-content' className='flex flex-wrap justify-center sm:flex-nowrap'>
+        <div id='about-content' className='flex flex-wrap justify-center md:flex-nowrap'>
           {/* About Text */}
           <div id='about-text' className='basis-[41rem]'>
             <p>
@@ -48,7 +48,7 @@ const About = () => {
             new technologies and improving on the ones I already know. If you have an opportunity you'd like
             to discuss, don't hesitate to contact me! @ 
             <span> </span> {/* Space */}
-            <a href='mailto:tomas.levesconte@gmail.com' className='font-bold hover:underline hover:text-[#fff]'>tomas.levesconte@gmail.com</a>
+            <a href='mailto:tomas.levesconte@gmail.com' className='font-bold text-[#b5b5b5] hover:underline hover:text-[#fff]'>tomas.levesconte@gmail.com</a>
             </p>
 
             {/* Skills */}
@@ -71,7 +71,7 @@ const About = () => {
           </div>
           
           {/* About Picture */}
-          <div id='about-picture' className='basis-41 max-w-[225px] max-h-[225px] sm:max-w-[250px] sm:max-h-[250px] grayscale hover:grayscale-0 drop-shadow-2xl pt-10 pl-0 sm:pt-0 sm:pl-10'>
+          <div id='about-picture' className='basis-41 max-w-[225px] max-h-[225px] sm:max-w-[250px] sm:max-h-[250px] grayscale hover:grayscale-0 pt-10 pl-0 md:pt-0 sm:pl-10'>
             <img src={ProfilePicture} className='rounded-md' alt='Me'></img>
           </div>
         </div>

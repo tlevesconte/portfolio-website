@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useRef } from 'react'
 
 // Framer motion
 import { useInView } from "framer-motion"
@@ -8,17 +8,6 @@ import Cardiff from '../../assets/cardiff-university-logo.png'
 import CardiffMet from '../../assets/cardiff-met-logo.png'
 
 const Education = () => {
-  // ReadMore/ShowLess button 1
-  // const [isActive1, setActive1] = useState("false");
-  // const handleToggle1 = () => {
-  //   setActive1(!isActive1);
-  // };
-  
-  // ReadMore/ShowLess button 2
-  // const [isActive2, setActive2] = useState("false");
-  // const handleToggle2 = () => {
-  //   setActive2(!isActive2);
-  // };
 
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
@@ -49,7 +38,6 @@ const Education = () => {
             <h3 className='text-lg font-semibold text-[#b5b5b5]'>Cardiff University</h3>
             <p className='text-[#777]'>October 2021 - December 2022</p>
             <p className='italic font-medium'>Master of Science - MSc Software Engineering</p>
-            {/* isActive1 ? 'mt-3 hidden text-sm' :  */}
             <ul className={'mt-3 text-sm'}>
               <li>
                 <span className='font-semibold'>• </span>Studied Agile Software Development, 
@@ -57,7 +45,6 @@ const Education = () => {
                 Manipulation.
               </li>
             </ul>
-            {/* <button onClick={handleToggle1} className='mt-3'>{isActive1 ? 'Read more' : 'Show less'}</button> */}
           </div>
         </div>
 
@@ -70,7 +57,6 @@ const Education = () => {
             <h3 className='font-semibold text-lg text-[#b5b5b5]'>Cardiff Metropolitan University</h3>
             <p className='text-[#777]'>September 2018 - June 2021</p>
             <p className='italic font-medium'>Bachelor of Science - BSc (Hons) Computer Science</p>
-            {/* isActive2 ? 'mt-3 hidden text-sm' :  */}
             <ul className={'mt-3 text-sm'}>
               <li className='mb-2'>
                 <span className='font-semibold'>• </span>Studied Artificial Intelligence, 
@@ -78,7 +64,6 @@ const Education = () => {
               </li>
               <li><span className='font-semibold'>• </span>Graduated with a First Class Honours.</li>
             </ul>
-            {/* <button onClick={handleToggle2} className='mt-3'>{isActive2 ? 'Read more' : 'Show less'}</button> */}
           </div>
         </div>
       </div>

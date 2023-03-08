@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, { useRef } from 'react'
 
 // Framer motion
 import { useInView } from "framer-motion"
@@ -27,7 +27,7 @@ const Contact = () => {
         I'm currently looking for work, so if you have an opportunity you'd like to dicuss, don't hesitate to contact me! 
       </p>
       {/* Button */}
-      <a className='mt-5 text-base text-white bg-[#15161B] rounded-md py-3 px-3' href='mailto:tomas.levesconte@gmail.com'>Message me!</a>
+      <a className='mt-5 text-base text-white bg-[#15161B] hover:bg-[#0d0d10] rounded-md py-3 px-3 transition-colors' href='mailto:tomas.levesconte@gmail.com'>Message me!</a>
     </section>
   )
 }
