@@ -14,7 +14,7 @@ function App() {
       <div id='header' className='bg-[#15161B]'>
         <Header />
         {/* Canvas */}
-        <motion.div className='w-full h-screen sm:h-[90vh]'
+        <motion.div className='w-full h-screen sm:h-[55vh]'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 4 }}>
@@ -24,7 +24,7 @@ function App() {
         </motion.div>
       </div>
       {/* Container */}
-      <div id='main' className='mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl text-[#999] px-[25px]'>
+      <div id='main' className='mx-auto max-w-lg sm:max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-[1089px] text-[#999] px-[25px]'>
 
         {/* Main */}
         <About />

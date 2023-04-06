@@ -10,7 +10,7 @@ const Contact = () => {
   
   return (
     // Contact section
-    <section id='contact' className='pt-[200px] flex flex-col justify-center items-center text-center'
+    <section id='contact' className='pt-[150px] flex flex-col justify-center items-center text-center'
     style={{
       transform: isInView ? "none" : "translatey(5%)",
       opacity: isInView ? 1 : 0,
