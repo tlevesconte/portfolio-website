@@ -18,7 +18,7 @@ const About = () => {
   
   return (
     // About section
-    <section id='about' className='pt-[200px]'
+    <section id='about' className='pt-[100px] max-w-[975px] mx-auto'
     style={{
       transform: isInView ? "none" : "translatey(5%)",
       opacity: isInView ? 1 : 0,
@@ -34,7 +34,7 @@ const About = () => {
         {/* About Content */}
         <div id='about-content' className='flex flex-wrap justify-center md:flex-nowrap'>
           {/* About Text */}
-          <div id='about-text' className='basis-[41rem]'>
+          <div id='about-text' className='basis-[60rem]'>
             <p>
               Hi, my name is Tomas and I’m a British/Swedish developer based in the UK. 
               My interest in software development first began when working on a programming 

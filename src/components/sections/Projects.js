@@ -1,16 +1,7 @@
 import React, { useRef } from 'react'
 
-// FontAwesome
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
-
 // Framer motion
 import { useInView } from "framer-motion"
-
-// Assets
-import Typer from '../../assets/typer-screenshot-in-browser.jpg'
-import Portfolio from '../../assets/my-portfolio-website-in-browser.png'
 
 const Projects = () => {
 
@@ -19,9 +10,9 @@ const Projects = () => {
   
   return (
     // Projects section
-    <section id='projects' className='flex flex-col max-w-[800px] pt-[200px] mx-auto' style={{
+    <section id='projects' className='flex flex-col pt-[100px] mx-auto' style={{
       transform: isInView ? "none" : "translatey(5%)",
-      opacity: isInView ? 1 : 0,
+      opacity: isInView ? 1 : 0,  
       transition: "all 0.9s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s"
     }}>
       
@@ -33,46 +24,65 @@ const Projects = () => {
       </h2>
       
       {/* Add projects here */}
-      <div id='project-figures' className='flex flex-row flex-wrap justify-center md:flex-nowrap'>
-        <figure className='flex flex-col md:max-w-[375px] shadow-2xl mb-10 md:mb-0 md:mr-[55px]'>
-            <img src={Typer} className='max-h-[240px]' alt='Typer'></img>
-            <figcaption className='px-3 py-3'>
-              <div className='flex flex-row justify-between'>
-                <h3 className='text-lg font-semibold text-[#b5b5b5]'>Typer</h3>
-                <div className='text-lg'>
-                  <a className='pr-2 text-xl text-[#b5b5b5]' href='https://github.com/tom-lv/typer'><FontAwesomeIcon icon={faGithub}/></a>
-                  <a className='text-xl text-[#b5b5b5]' href='https://tom-lv.github.io/typer/'><FontAwesomeIcon icon={faLink}/></a>
-                </div>
-              </div>
-              <p className='mb-2 italic font-medium text-[#b5b5b5]'>Web Application</p>
-              <p>A minimalistic typing test inspired by Monkeytype.</p>
-              <div className='flex flex-row flex-wrap text-[#b5b5b5]'>
-                <span className='px-1 py-1 mt-2 mr-1 font-semibold'>JavaScript</span>
-                <span className='px-1 py-1 mt-2 mr-1 font-semibold'>HTML</span>
-                <span className='px-1 py-1 mt-2 mr-1 font-semibold'>CSS</span>
-              </div>
-            </figcaption>
-        </figure>
+      <div id='project-figures' className='flex flex-row flex-wrap xl:flex-nowrap'>
 
-        <figure className='flex flex-col md:max-w-[375px] shadow-2xl'>
-            <img src={Portfolio} className='max-h-[240px]' alt='Portfolio'></img>
-            <figcaption className='px-3 py-3'>
-              <div className='flex flex-row justify-between'>
-                <h3 className='text-lg font-semibold text-[#b5b5b5]'>My Portfolio Site</h3>
-                <div className='text-lg'>
-                  <a className='pr-2 text-xl text-[#b5b5b5]' href='https://github.com/tom-lv/my-portfolio-website'><FontAwesomeIcon icon={faGithub}/></a>
-                  <a className='text-xl text-[#b5b5b5]' href='https://tomaslevesconte.com'><FontAwesomeIcon icon={faLink}/></a>
-                </div>
-              </div>
-              <p className='mb-2 italic font-medium text-[#b5b5b5]'>Web Application</p>
-              <p>Features a few projects I have worked on, plus links.</p>
-              <div className='flex flex-row flex-wrap text-[#b5b5b5]'>
-                <span className='px-1 py-1 mt-2 mr-1 font-semibold'>React</span>
-                <span className='px-1 py-1 mt-2 mr-1 font-semibold'>TailwindCSS</span>
-                <span className='px-1 py-1 mt-2 mr-1 font-semibold'>RTF</span>
-              </div>
-            </figcaption>
-        </figure>
+        <div className='w-full lg:max-w-[315px] px-4 py-4 bg-[#15161B] rounded-md mx-3 my-3'>
+          <div className='flex flex-row justify-between'>
+            <h3 className='text-lg font-semibold text-[#b5b5b5] mb-2'>Java Chess</h3>
+            <div className='text-gray-700'>
+              <p>2023</p>
+            </div>
+          </div>
+            <p className='mb-2 italic font-medium text-[#b5b5b5]'>Desktop Application</p>
+            <p>A lightweight Chess GUI that I'm currently working on.</p>
+            <div className='flex flex-row flex-wrap text-[#b5b5b5] mt-2 mb-2'>
+              <span className='py-1 pr-1 mr-1 font-semibold'>Java</span>
+              <span className='px-1 py-1 mr-1 font-semibold'>JavaFX</span>
+            </div>
+            <div className='text-md'>
+              <a className='pr-3 text-[#b5b5b5] hover:text-[#fff]' href='https://github.com/tom-lv/java-chess'>GitHub</a>
+            </div>
+        </div>
+
+        <div className='w-full lg:max-w-[315px] px-4 py-4 bg-[#15161B] rounded-md mx-3 my-3'>
+          <div className='flex flex-row justify-between'>
+            <h3 className='text-lg font-semibold text-[#b5b5b5] mb-2'>Personal Website</h3>
+            <div className='text-gray-700'>
+              <p>2023</p>
+            </div>
+          </div>
+            <p className='mb-2 italic font-medium text-[#b5b5b5]'>Web Application</p>
+            <p>My personal website. Features some of the projects that I have worked on.</p>
+            <div className='flex flex-row flex-wrap text-[#b5b5b5] mt-2 mb-2'>
+              <span className='py-1 pr-1 mr-1 font-semibold'>ReactJS</span>
+              <span className='px-1 py-1 mr-1 font-semibold'>RTF</span>
+              <span className='px-1 py-1 mr-1 font-semibold'>TailwindCSS</span>
+            </div>
+            <div className='text-md'>
+              <a className='pr-3 text-[#b5b5b5] hover:text-[#fff]' href='https://github.com/tom-lv/my-portfolio-website'>GitHub</a>
+              <a className=' text-[#b5b5b5] hover:text-[#fff]' href='https://tomaslevesconte.com'>Link</a>
+            </div>
+        </div>
+        
+        <div className='w-full lg:max-w-[315px] px-4 py-4 bg-[#15161B] rounded-md mx-3 my-3'>
+          <div className='flex flex-row justify-between'>
+            <h3 className='text-lg font-semibold text-[#b5b5b5] mb-2'>Typer</h3>
+            <div className='text-gray-700'>
+              <p>2022</p>
+            </div>
+          </div>
+            <p className='mb-2 italic font-medium text-[#b5b5b5]'>Web Application</p>
+            <p>A minimalistic typing test inspired by Monkeytype.</p>
+            <div className='flex flex-row flex-wrap text-[#b5b5b5] mt-2 mb-2'>
+              <span className='py-1 pr-1 mr-1 font-semibold rounded-sm'>HTML</span>
+              <span className='px-1 py-1 mr-1 font-semibold'>CSS</span>
+              <span className='px-1 py-1 mr-1 font-semibold'>JavaScript</span>
+            </div>
+            <div className='text-md'>
+              <a className='pr-3 text-[#b5b5b5] hover:text-[#fff]' href='https://github.com/tom-lv/typer'>GitHub</a>
+              <a className=' text-[#b5b5b5] hover:text-[#fff]' href='https://tom-lv.github.io/typer/'>Link</a>
+            </div>
+        </div>
       </div>
     </section>
   )

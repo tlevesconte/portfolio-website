@@ -14,7 +14,7 @@ const Education = () => {
 
   return (
     // Education section
-    <section id='education' className='flex flex-col max-w-[625px] pt-[200px] mx-auto'
+    <section id='education' className='flex flex-col max-w-[625px] pt-[100px] mx-auto'
     style={{
       transform: isInView ? "none" : "translatey(5%)",
       opacity: isInView ? 1 : 0,
@@ -39,11 +39,12 @@ const Education = () => {
             <p className='text-[#777]'>October 2021 - December 2022</p>
             <p className='italic font-medium'>Master of Science - MSc Software Engineering</p>
             <ul className={'mt-3 text-sm'}>
-              <li>
+              <li className='mb-2'>
                 <span className='font-semibold'>• </span>Studied Agile Software Development, 
                 DevOps, Delivering User Experience, Testing, Web Application Development and Data 
                 Manipulation.
               </li>
+              <li><span className='font-semibold'>• </span>Graduated with a Merit.</li>
             </ul>
           </div>
         </div>
