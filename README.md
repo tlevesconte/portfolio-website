@@ -1,6 +1,5 @@
 <h1 align="center">tomaslevesconte.com</h1>
 
-## About
 My personal website [tomaslevesconte.com](https://tomaslevesconte.com) built with NextJS, TypeScript, Three.js (RTF) and TailwindCSS.
 
 ![Portfolio Application Header](https://raw.githubusercontent.com/tom-lv/personal-website/migration-without-sanity/docs/Screenshot_1.png)
