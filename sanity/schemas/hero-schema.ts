@@ -1,4 +1,0 @@
-const project = {
-    name: 'hero',
-    
-}

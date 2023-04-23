@@ -1,36 +1,46 @@
-import Link from 'next/link'
+import Link from 'next/link';
 import { Canvas } from '@react-three/fiber';
 import IcosahedronDisplacement from '../3D/IcosahedronDisplacement';
-import { FaFileDownload } from 'react-icons/fa';
-import { SiGithub, SiLinkedin, SiGmail } from 'react-icons/si';
+import DOMPurify from 'isomorphic-dompurify'; // Stop Cross Site Scripting (XSS)
 
-export const Hero = () => {
+/**
+ * Make certain words bold from a given input
+ * @param input
+ * @returns
+ */
+function makeWordsBold(input: any) {
+  const keywords = ['Web Developer', 'Software Engineer'];
+  return input.replace(new RegExp('(\\b)(' + keywords.join('|') + ')(\\b)', 'ig'), '$1<strong>$2</strong>$3');
+}
+
+export const Hero = ({ heading, bio, socials }: any) => {
   return (
     // Header section
     <header className="h-screen w-full bg-[#15161B] sm:h-[55vh]">
       <div className="absolute z-[100] flex h-screen w-full flex-col items-center justify-center px-2 text-center text-[#ffffff] sm:h-[55vh] ">
         {/* Heading */}
-        <h1 className="mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl">Tomas Le Vesconte</h1>
+        <h1 className="mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl">{heading}</h1>
 
         {/* Bio */}
-        <p className="max-w-md mb-6">
-          <strong>Web Developer</strong> & aspiring <strong>Software Engineer</strong> based in the United Kingdom.
-        </p>
+        <p className="mb-6 max-w-md" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(bio)) }}></p>
 
         {/* Icons */}
         <div className="flex flex-row justify-between text-xl">
-          <Link title="GitHub" href="https://github.com/tom-lv">
-            <SiGithub className="mx-4" />
-          </Link>
-          <Link title="LinkedIn" href="https://www.linkedin.com/in/tomas-l-853701195/">
-            <SiLinkedin className="mx-4" />
-          </Link>
-          <a title="Sorry, not available right now">
-            <FaFileDownload className="mx-4" />
-          </a>
-          <Link title="Email" href="mailto:tomas.levesconte@gmail.com">
-            <SiGmail className="mx-4" />
-          </Link>
+          {socials.map((social: any, index: number) => {
+            if (social.title == 'cv') {
+              return (
+                <Link className="mx-4" key={index} title={social.title} href={social.url}>
+                  {<social.icon />}
+                </Link>
+              );
+            } else {
+              return (
+                <Link className="mx-4" key={index} title={social.title} href={social.url}>
+                  {<social.icon />}
+                </Link>
+              );
+            }
+          })}
         </div>
       </div>
 

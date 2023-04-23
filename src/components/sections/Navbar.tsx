@@ -1,6 +1,7 @@
+import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ handle, sections }: any) => {
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [navbarState, showNavbar] = useState(true);
   const [navbarShadow, showNavbarShadow] = useState(false);
@@ -52,33 +53,19 @@ const Navbar = () => {
       {/* Navbar top */}
       <div className={`fixed flex items-center justify-between ${navbarState ? 'top-0' : 'top-[-69px]'} ${navbarShadow ? 'shadow-xl' : ''} z-[101] h-[70px] w-full px-6 text-[#ffffff]  backdrop-blur transition-all duration-300 sm:px-14`}>
         <a className="hover:text-[#b5b5b5]" href="/">
-          tom-lv
+          {handle}
         </a>
-        <ol className="items-center hidden md:flex">
-          <li className="mr-8">
-            <a className="transition-colors hover:text-[#b5b5b5]" href="#about">
-              <span className="mr-1 text-xs text-[#45FFFF]">01.</span>
-              About
-            </a>
-          </li>
-          <li className="mr-8">
-            <a className="transition-colors hover:text-[#b5b5b5]" href="#education">
-              <span className="mr-1 text-xs text-[#45FFFF]">02.</span>
-              Education
-            </a>
-          </li>
-          <li className="mr-8">
-            <a className="transition-colors hover:text-[#b5b5b5]" href="#projects">
-              <span className="mr-1 text-xs text-[#45FFFF]">03.</span>
-              Projects
-            </a>
-          </li>
-          <li>
-            <a className="transition-colors hover:text-[#b5b5b5]" href="#contact">
-              <span className="mr-1 text-xs text-[#45FFFF]">04.</span>
-              Contact
-            </a>
-          </li>
+        <ol className="hidden items-center md:flex">
+          {sections.map((section: any, index: number) => {
+            return (
+              <li key={index} className="ml-8">
+                <Link className="transition-colors hover:text-[#b5b5b5]" key={index} href={section.url}>
+                  <span className="mr-1 text-xs text-gray-700">0{index + 1}.</span>
+                  {section.title}
+                </Link>
+              </li>
+            );
+          })}
         </ol>
       </div>
 
@@ -88,7 +75,7 @@ const Navbar = () => {
           {hamburgerState ? 'Close' : 'Menu'}
         </button>
       </div>
-      
+
       {/* Navbar aside */}
       <div>
         {/* Background blur */}
@@ -96,30 +83,18 @@ const Navbar = () => {
         {/* Aside menu */}
         <aside className={`fixed top-0 z-[103] flex h-full w-[75%] items-center justify-center bg-[#191A1F] text-center text-xl text-white sm:w-[55%] ${hamburgerState ? 'right-0' : 'right-[-100%]'} shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-200`}>
           <ol className="flex flex-col">
-            <li className="mb-10">
-              <a onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-[#b5b5b5] sm:text-xl" href="#about">
-                <span className="text-sm text-[#45FFFF]">01.</span>
-                About
-              </a>
-            </li>
-            <li className="mb-10">
-              <a onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-[#b5b5b5] sm:text-xl" href="#education">
-                <span className="text-sm text-[#45FFFF]">02.</span>
-                Education
-              </a>
-            </li>
-            <li className="mb-10">
-              <a onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-[#b5b5b5] sm:text-xl" href="#projects">
-                <span className="text-sm text-[#45FFFF]">03.</span>
-                Projects
-              </a>
-            </li>
-            <li>
-              <a onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-[#b5b5b5] sm:text-xl" href="#contact">
-                <span className="text-sm text-[#45FFFF]">04.</span>
-                Contact
-              </a>
-            </li>
+            {sections.map((section: any, index: number) => {
+              return (
+                <li key={index} className="mb-10">
+                  <Link onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-[#b5b5b5] sm:text-xl" href={section.url}>
+                    <span key={index} className="text-sm text-[#45FFFF]">
+                      0{index + 1}.
+                    </span>
+                    {section.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ol>
         </aside>
       </div>
