@@ -55,7 +55,7 @@ const Navbar = ({ handle, sections }: any) => {
         <a className="hover:text-[#b5b5b5]" href="/">
           {handle}
         </a>
-        <ol className="hidden items-center md:flex">
+        <ol className="items-center hidden md:flex">
           {sections.map((section: any, index: number) => {
             return (
               <li key={index} className="ml-8">
@@ -87,7 +87,7 @@ const Navbar = ({ handle, sections }: any) => {
               return (
                 <li key={index} className="mb-10">
                   <Link onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-[#b5b5b5] sm:text-xl" href={section.url}>
-                    <span key={index} className="text-sm text-[#45FFFF]">
+                    <span key={index} className="text-sm text-gray-700">
                       0{index + 1}.
                     </span>
                     {section.title}
