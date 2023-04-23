@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Canvas } from '@react-three/fiber';
 import IcosahedronDisplacement from '../3D/IcosahedronDisplacement';
 import DOMPurify from 'isomorphic-dompurify'; // Stop Cross Site Scripting (XSS)
+import { motion } from 'framer-motion';
 
 /**
  * Make certain words bold from a given input
@@ -22,7 +23,7 @@ export const Hero = ({ heading, bio, socials }: any) => {
         <h1 className="mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl">{heading}</h1>
 
         {/* Bio */}
-        <p className="mb-6 max-w-md" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(bio)) }}></p>
+        <p className="max-w-md mb-6" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(bio)) }}></p>
 
         {/* Icons */}
         <div className="flex flex-row justify-between text-xl">
@@ -45,9 +46,11 @@ export const Hero = ({ heading, bio, socials }: any) => {
       </div>
 
       {/* Icosahedron Displacement Object */}
-      <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
-        <IcosahedronDisplacement />
-      </Canvas>
+      <motion.div className='h-screen w-full bg-[#15161B] sm:h-[55vh]' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 4 }}> 
+        <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
+          <IcosahedronDisplacement />
+        </Canvas>
+      </motion.div>
     </header>
   );
 };
