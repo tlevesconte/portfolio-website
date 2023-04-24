@@ -7,53 +7,55 @@ import ProfilePicture from '../../../public/images/profile-picture.jpg';
 const About = ({ heading, paragraph1, paragraph2, skillsIntro, skills1, skills2, skills3 }: any) => {
   return (
     // About section
-    <section className="mx-auto max-w-[975px] pt-[100px]">
+    <section id="about" className="mx-auto max-w-[975px] pt-[100px]">
       {/* About Heading*/}
-      <h2 className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
-        <span className="mr-3 text-xl font-normal text-gray-700">01. </span>
+      <h2 id="about-heading" className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
+        <span id="number-prefix" className="mr-3 text-xl font-normal text-gray-700">
+          01.{' '}
+        </span>
         {heading}
-        <div className="ml-5 h-px w-[130px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
+        <div id="after-line" className="ml-5 h-px w-[130px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
       </h2>
 
       {/* About Content */}
-      <div className="flex flex-wrap justify-center md:flex-nowrap">
+      <div id="about-content" className="flex flex-wrap justify-center md:flex-nowrap">
         {/* About Text */}
-        <div className="basis-[46rem]">
+        <div id="about-text" className="basis-[46rem]">
           <p>{paragraph1}</p>
           <p className="mt-3">
             {paragraph2} {/* Space */}
             <a href="mailto:tomas.levesconte@gmail.com" className="font-bold text-[#b5b5b5] hover:text-[#fff] hover:underline">
-              tomas.levesconte@gmail.com
+              email
             </a>
           </p>
 
           {/* Skills */}
           <p className="mt-3">{skillsIntro}</p>
-          <ul className="mt-3 flex flex-row text-[#b5b5b5]">
+          <ul className="mt-10 sm:mt-3 flex flex-row text-[#b5b5b5] justify-center sm:justify-normal">
             <div>
               {skills1.map((skill: any, index: number) => {
                 return (
-                  <li className="flex flex-row items-center text-sm sm:text-base" key={index}>
+                  <li className="flex flex-row items-center text-xs sm:text-sm" key={index}>
                     {<skill.icon className="mr-1" />}
                     {skill.title}
                   </li>
                 );
               })}
             </div>
-            <div className="ml-7">
+            <div className="ml-3 sm:ml-7">
               {skills2.map((skill: any, index: number) => {
                 return (
-                  <li className="flex flex-row items-center text-sm sm:text-base" key={index}>
+                  <li className="flex flex-row items-center text-xs sm:text-sm" key={index}>
                     {<skill.icon className="mr-1" />}
                     {skill.title}
                   </li>
                 );
               })}
             </div>
-            <div className="ml-7">
+            <div className="ml-3 sm:ml-7">
               {skills3.map((skill: any, index: number) => {
                 return (
-                  <li className="flex flex-row items-center text-sm sm:text-base" key={index}>
+                  <li className="flex flex-row items-center text-xs sm:text-sm" key={index}>
                     {<skill.icon className="mr-1" />}
                     {skill.title}
                   </li>
