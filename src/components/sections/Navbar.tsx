@@ -52,9 +52,9 @@ const Navbar = ({ handle, sections }: any) => {
     <nav>
       {/* Navbar top */}
       <div className={`fixed flex items-center justify-between ${navbarState ? 'top-0' : 'top-[-69px]'} ${navbarShadow ? 'shadow-xl' : ''} z-[101] h-[70px] w-full px-6 text-[#ffffff]  backdrop-blur transition-all duration-300 sm:px-14`}>
-        <a className="hover:text-[#b5b5b5]" href="/">
+        <Link className="hover:text-[#b5b5b5]" href="/">
           {handle}
-        </a>
+        </Link>
         <ol className="items-center hidden md:flex">
           {sections.map((section: any, index: number) => {
             return (
