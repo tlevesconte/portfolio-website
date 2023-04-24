@@ -4,18 +4,16 @@ import Image from 'next/image';
 const Education = ({ heading, universities }: any) => {
   return (
     // Education section
-    <section id="education" className="mx-auto flex max-w-[625px] flex-col pt-[100px]">
+    <section className="mx-auto flex max-w-[625px] flex-col pt-[100px]">
       {/* Education Header */}
-      <h2 id="education-heading" className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
-        <span id="number-prefix" className="mr-3 text-xl font-normal text-gray-700">
-          02.{' '}
-        </span>
+      <h2 className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
+        <span className="mr-3 text-xl font-normal text-gray-700">02. </span>
         {heading}
-        <div id="after-line" className="ml-5 h-px w-[180px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
+        <div className="ml-5 h-px w-[180px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
       </h2>
 
       {/* Education Content */}
-      <div id="education-content">
+      <div>
         {universities.map((university: any, index: number) => {
           return (
             <div key={index} className="mb-6 flex flex-row">

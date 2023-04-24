@@ -55,7 +55,7 @@ const Navbar = ({ handle, sections }: any) => {
         <Link className="hover:text-[#b5b5b5]" href="/">
           {handle}
         </Link>
-        <ol className="items-center hidden md:flex">
+        <ol className="hidden items-center md:flex">
           {sections.map((section: any, index: number) => {
             return (
               <li key={index} className="ml-8">

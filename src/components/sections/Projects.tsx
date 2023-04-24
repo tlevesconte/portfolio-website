@@ -4,18 +4,16 @@ import Link from 'next/link';
 const Projects = ({ heading, projects }: any) => {
   return (
     // Projects section
-    <section id="projects" className="mx-auto flex flex-col pt-[100px]">
+    <section className="mx-auto flex flex-col pt-[100px]">
       {/* Projects Header */}
-      <h2 id="projects-heading" className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
-        <span id="number-prefix" className="mr-3 text-xl font-normal text-gray-700">
-          03.{' '}
-        </span>
+      <h2 className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
+        <span className="mr-3 text-xl font-normal text-gray-700">03. </span>
         {heading}
-        <div id="after-line" className="ml-5 h-px w-[180px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
+        <div className="ml-5 h-px w-[180px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
       </h2>
 
       {/* Add projects here */}
-      <div id="project-figures" className="flex flex-row flex-wrap xl:flex-nowrap">
+      <div className="flex flex-row flex-wrap xl:flex-nowrap">
         {projects.map((project: any, index: number) => {
           return (
             <div key={index} className="mx-3 my-3 w-full rounded-md bg-[#15161B] px-4 py-4 lg:max-w-[315px]">
