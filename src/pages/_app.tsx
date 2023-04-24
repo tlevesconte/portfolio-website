@@ -9,7 +9,7 @@ const montserrat = Montserrat({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={`${montserrat.className} text-[#999] bg-[#191A1F]`}>
+    <main className={`${montserrat.className} text-[#999] bg-[#191A1F] text-base`}>
       <Component {...pageProps} />
     </main>
   );
