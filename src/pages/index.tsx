@@ -1,5 +1,5 @@
 import Metadata from '@/components/Metadata';
-import { Hero, Navbar, About, Education, Projects, Contact, Footer } from '@/components/sections';
+import { Navbar, Hero, About, Education, Projects, Contact, Footer } from '@/components/sections';
 import { navbarContent, heroContent, aboutContent, educationContent, projectContent, contactContent, footerContent } from '../../content/content';
 
 export default function Home() {
