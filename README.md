@@ -13,4 +13,4 @@ Responsive design
 
 ## Credit
 * Inspiration for this site's design came from [brittanychiang.com](https://brittanychiang.com/).
-* The '3D Perlin Noise' that was used on the Icosaherdron for displacement came from [Stefan Gustavson](https://github.com/stegu).
+* The '3D Perlin Noise' that was used to create the displacement object came from [Stefan Gustavson](https://github.com/stegu).
