@@ -23,20 +23,20 @@ export const Hero = ({ heading, bio, socials }: any) => {
         <h1 className="mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl">{heading}</h1>
 
         {/* Bio */}
-        <p className="mb-6 max-w-md" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(bio)) }}></p>
+        <p className="max-w-md mb-6" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(bio)) }}></p>
 
         {/* Icons */}
         <div className="flex flex-row justify-between text-xl">
           {socials.map((social: any, index: number) => {
             if (social.title == 'cv') {
               return (
-                <Link className="mx-4" key={index} title={social.title} href={social.url}>
+                <Link className="mx-4 text-[#ffffff]" key={index} title={social.title} href={social.url}>
                   {<social.icon />}
                 </Link>
               );
             } else {
               return (
-                <Link className="mx-4" key={index} title={social.title} href={social.url}>
+                <Link className="mx-4 text-[#ffffff]" key={index} title={social.title} href={social.url}>
                   {<social.icon />}
                 </Link>
               );
