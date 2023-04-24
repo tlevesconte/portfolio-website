@@ -12,5 +12,5 @@ Responsive design
 ![Portfolio Application Mobile View2](https://raw.githubusercontent.com/tom-lv/personal-website/migration-without-sanity/docs/Screenshot_3.png)
 
 ## Credit
-* Inspiration for site's layout from [brittanychiang.com](https://brittanychiang.com/). So all credit in that respect goes to her. 
-* The '3D Perlin Noise' that was applied to the Icosaherdron came from [Stefan Gustavson](https://github.com/stegu).
+* Inspiration for this site's design came from [brittanychiang.com](https://brittanychiang.com/).
+* The '3D Perlin Noise' that was used on the Icosaherdron for displacement came from [Stefan Gustavson](https://github.com/stegu).
