@@ -23,7 +23,7 @@ export const Hero = ({ heading, bio, socials }: any) => {
         <h1 className="mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl">{heading}</h1>
 
         {/* Bio */}
-        <p className="max-w-md mb-6" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(bio)) }}></p>
+        <p className="mb-6 max-w-md" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(bio)) }}></p>
 
         {/* Icons */}
         <div className="flex flex-row justify-between text-xl">
@@ -46,7 +46,7 @@ export const Hero = ({ heading, bio, socials }: any) => {
       </div>
 
       {/* Icosahedron Displacement Object */}
-      <motion.div className='h-screen w-full bg-[#15161B] sm:h-[55vh]' initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 4 }}> 
+      <motion.div className="h-screen w-full bg-[#15161B] sm:h-[55vh]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 4 }}>
         <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
           <IcosahedronDisplacement />
         </Canvas>
