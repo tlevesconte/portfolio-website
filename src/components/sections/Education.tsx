@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Education = ({ heading, universities }: any) => {
   return (
     // Education section
-    <section className="mx-auto flex max-w-[625px] flex-col pt-[100px]">
+    <section id='education' className="mx-auto flex max-w-[625px] flex-col pt-[100px]">
       {/* Education Header */}
       <h2 className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
         <span className="mr-3 text-xl font-normal text-gray-700">02. </span>
@@ -16,14 +16,14 @@ const Education = ({ heading, universities }: any) => {
       <div>
         {universities.map((university: any, index: number) => {
           return (
-            <div key={index} className="mb-6 flex flex-row">
+            <div key={index} className="flex flex-row mb-6">
               <div className="mr-3 max-w-[79px]">
                 <Image src={university.img} alt={university.alt}></Image>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-[#b5b5b5]">{university.title}</h3>
                 <p className="text-[#777]">{university.date}</p>
-                <p className="font-medium italic">{university.qualification}</p>
+                <p className="italic font-medium">{university.qualification}</p>
                 <ul className={'mt-3 text-sm'}>
                   <li className="mb-2">
                     <span className="font-semibold">• </span>
