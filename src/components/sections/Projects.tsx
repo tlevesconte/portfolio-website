@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Projects = ({ heading, projects }: any) => {
   return (
     // Projects section
-    <section className="mx-auto flex flex-col pt-[100px]">
+    <section id='projects' className="mx-auto flex flex-col pt-[100px]">
       {/* Projects Header */}
       <h2 className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
         <span className="mr-3 text-xl font-normal text-gray-700">03. </span>
@@ -28,7 +28,7 @@ const Projects = ({ heading, projects }: any) => {
               <div className="mb-2 mt-2 flex flex-row flex-wrap text-[#b5b5b5]">
                 {project.technologies.map((technology: any, index: number) => {
                   return (
-                    <span key={index} className="mr-1 py-1 pr-1 font-semibold">
+                    <span key={index} className="py-1 pr-1 mr-1 font-semibold">
                       {technology.title}
                     </span>
                   );

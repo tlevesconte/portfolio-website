@@ -3,7 +3,7 @@ import React from 'react';
 const Contact = ({ heading, description, buttonText }: any) => {
   return (
     // Contact section
-    <section className="flex flex-col items-center justify-center pt-[150px] text-center">
+    <section id='contact' className="flex flex-col items-center justify-center pt-[150px] text-center">
       {/* Contact Header */}
 
       <h2 className="mb-9 flex items-center text-3xl font-semibold text-[#b5b5b5]">
