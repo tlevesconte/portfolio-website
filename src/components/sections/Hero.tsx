@@ -14,20 +14,20 @@ function makeWordsBold(input: any) {
   return input.replace(new RegExp('(\\b)(' + keywords.join('|') + ')(\\b)', 'ig'), '$1<strong>$2</strong>$3');
 }
 
-export const Hero = ({ heading, bio, socials }: any) => {
+export const Hero = ({ data }: any) => {
   return (
     // Header section
     <header className="h-screen w-full bg-[#15161B] sm:h-[55vh]">
       <div className="absolute z-[100] flex h-screen w-full flex-col items-center justify-center px-2 text-center text-[#ffffff] sm:h-[55vh] ">
         {/* Heading */}
-        <h1 className="mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl">{heading}</h1>
+        <h1 className="mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl">{data.heading}</h1>
 
         {/* Bio */}
-        <p className="max-w-md mb-6" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(bio)) }}></p>
+        <p className="max-w-md mb-6" dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(makeWordsBold(data.bio)) }}></p>
 
         {/* Icons */}
         <div className="flex flex-row justify-between text-xl">
-          {socials.map((social: any, index: number) => {
+          {data.socials.map((social: any, index: number) => {
             if (social.title == 'cv') {
               return (
                 <Link className="mx-4 text-[#ffffff]" key={index} title={social.title} href={social.url}>

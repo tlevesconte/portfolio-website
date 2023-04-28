@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 
-const Navbar = ({ handle, sections }: any) => {
+const Navbar = ({ data }: any) => {
   const [lastScrollPos, setLastScrollPos] = useState(0);
   const [navbarState, showNavbar] = useState(true);
   const [navbarShadow, showNavbarShadow] = useState(false);
@@ -53,10 +53,10 @@ const Navbar = ({ handle, sections }: any) => {
       {/* Navbar top */}
       <div className={`fixed flex items-center justify-between ${navbarState ? 'top-0' : 'top-[-69px]'} ${navbarShadow ? 'shadow-xl' : ''} z-[101] h-[70px] w-full px-6 text-[#ffffff]  backdrop-blur transition-all duration-300 sm:px-14`}>
         <Link className="hover:text-[#b5b5b5]" href="/">
-          {handle}
+          {data.handle}
         </Link>
-        <ol className="hidden items-center md:flex">
-          {sections.map((section: any, index: number) => {
+        <ol className="items-center hidden md:flex">
+          {data.sections.map((section: any, index: number) => {
             return (
               <li key={index} className="ml-8">
                 <Link className="transition-colors hover:text-[#b5b5b5]" key={index} href={section.url}>
@@ -83,7 +83,7 @@ const Navbar = ({ handle, sections }: any) => {
         {/* Aside menu */}
         <aside className={`fixed top-0 z-[103] flex h-full w-[75%] items-center justify-center bg-[#191A1F] text-center text-xl text-white sm:w-[55%] ${hamburgerState ? 'right-0' : 'right-[-100%]'} shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-200`}>
           <ol className="flex flex-col">
-            {sections.map((section: any, index: number) => {
+            {data.sections.map((section: any, index: number) => {
               return (
                 <li key={index} className="mb-10">
                   <Link onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-[#b5b5b5] sm:text-xl" href={section.url}>

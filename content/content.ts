@@ -1,15 +1,21 @@
+// Imports
 import { FaFileDownload, FaJava, FaReact, FaWordpress, FaHtml5 } from 'react-icons/fa';
 import { SiGithub, SiLinkedin, SiGmail, SiTailwindcss, SiTypescript } from 'react-icons/si';
 import { IoLogoJavascript } from 'react-icons/io';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { GrMysql } from 'react-icons/gr';
 
-// Assets
+// Images
 import Cardiff from '../public/images/cardiff-university-logo.png';
 import CardiffMet from '../public/images/cardiff-met-logo.png';
+import ProfilePicture from '../public/images/profile-picture.jpg';
 
+// Constants
 export const EMAIL = 'tomaslevesconte.com';
 
+/**
+ * Navbar
+ */
 export const navbarContent = {
   handle: 'tom-lv',
   sections: [
@@ -32,6 +38,9 @@ export const navbarContent = {
   ],
 };
 
+/**
+ * Hero
+ */
 export const heroContent = {
   heading: 'Tomas Le Vesconte',
   bio: 'Web Developer and aspiring Software Engineer based in the United Kingdom.',
@@ -59,12 +68,16 @@ export const heroContent = {
   ],
 };
 
+/**
+ * About
+ */
 export const aboutContent = {
-  heading: 'About Me',
-  paragraph1: 'Hi, my name is Tomas and I’m a British/Swedish developer based in the UK. My interest in software development first began when working on a programming module for college. The task involved creating an event-driven application in Visual Studio using VB.NET. Having never done programming before, I was surprised by how much I enjoyed it.',
-  paragraph2: "After completing the module, I found myself working on personal projects in my spare time and even some freelance web development work. These days I’m focused on learning new technologies and improving on the ones I already know. If you have an opportunity you'd like to discuss, don't hesitate to contact me! @",
-  skillsIntro: "Here are some of the technologies I've used recently: ",
-  skills_col_1: [
+  sectionHeading: 'About Me',
+  firstParagraph: 'Hi, my name is Tomas and I’m a British/Swedish developer based in the UK. My interest in software development first began when working on a programming module for college. The task involved creating an event-driven application in Visual Studio using VB.NET. Having never done programming before, I was surprised by how much I enjoyed it.',
+  secondParagraph: "After completing the module, I found myself working on personal projects in my spare time and even some freelance web development work. These days I’m focused on learning new technologies and improving on the ones I already know. If you have an opportunity you'd like to discuss, don't hesitate to contact me! @",
+  email: 'mailto:' + EMAIL,
+  technologiesIntroduction: "Here are some of the technologies I've used recently: ",
+  firstTechnologiesCol: [
     {
       title: 'Java',
       icon: FaJava,
@@ -78,7 +91,7 @@ export const aboutContent = {
       icon: FaReact,
     },
   ],
-  skills_col_2: [
+  secondTechnologiesCol: [
     {
       title: 'NextJS',
       icon: TbBrandNextjs,
@@ -92,7 +105,7 @@ export const aboutContent = {
       icon: GrMysql,
     },
   ],
-  skills_col_3: [
+  thirdTechnologiesCol: [
     {
       title: 'Wordpress',
       icon: FaWordpress,
@@ -106,34 +119,42 @@ export const aboutContent = {
       icon: FaHtml5,
     },
   ],
+  profilePicture: ProfilePicture,
+  alt: 'Picture of Me',
 };
 
+/**
+ * Education
+ */
 export const educationContent = {
-  heading: 'Education',
+  sectionHeading: 'Education',
   universities: [
     {
       title: 'Cardiff University',
       date: 'October 2021 - December 2022',
       qualification: 'Master of Science - MSc Software Engineering',
-      info: 'Studied Agile Software Development, DevOps, Delivering User Experience, Testing, Web Application Development and Data Manipulation.',
+      information: 'Studied Agile Software Development, DevOps, Delivering User Experience, Testing, Web Application Development and Data Manipulation.',
       grade: 'Graduated with a Merit.',
-      img: Cardiff,
+      logo: Cardiff,
       alt: 'Cardiff University Logo',
     },
     {
       title: 'Cardiff Metropolitan University',
       date: 'September 2018 - June 2021',
       qualification: 'Bachelor of Science - BSc (Hons) Computer Science',
-      info: 'Studied Artificial Intelligence, Software Engineering, Programming, Database Management and Networking.',
+      information: 'Studied Artificial Intelligence, Software Engineering, Programming, Database Management and Networking.',
       grade: 'Graduated with a First Class Honours.',
-      img: CardiffMet,
+      logo: CardiffMet,
       alt: 'Cardiff Met University Logo',
     },
   ],
 };
 
+/**
+ * Projects
+ */
 export const projectContent = {
-  heading: 'Projects',
+  sectionHeading: 'Projects',
   projects: [
     {
       title: 'Java Chess',
@@ -210,13 +231,19 @@ export const projectContent = {
   ],
 };
 
+/**
+ * Contact
+ */
 export const contactContent = {
-  title: 'Get In Touch',
+  sectionHeading: 'Get In Touch',
   description: "I'm currently looking for work, so if you have an opportunity you'd like to dicuss, don't hesitate to contact me!",
   buttonText: 'Message me!',
-  // Include mailto link
+  email: 'mailto:' + EMAIL,
 };
 
+/**
+ * Footer
+ */
 export const footerContent = {
   items: [
     {
