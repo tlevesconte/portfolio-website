@@ -6,7 +6,7 @@ const Projects = ({ data }: any) => {
     // Projects section
     <section id="projects" className="mx-auto flex flex-col pt-[100px]">
       {/* Projects Header */}
-      <h2 className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
+      <h2 className="flex items-center text-2xl font-semibold mb-9 text-secondary-grey">
         <span className="mr-3 text-xl font-normal text-gray-700">03. </span>
         {data.sectionHeading}
         <div className="ml-5 h-px w-[180px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
@@ -16,16 +16,16 @@ const Projects = ({ data }: any) => {
       <div className="flex flex-row flex-wrap xl:flex-nowrap">
         {data.projects.map((project: any, index: number) => {
           return (
-            <div key={index} className="mx-3 my-3 w-full rounded-md bg-[#15161B] px-4 py-4 lg:max-w-[315px]">
+            <div key={index} className="mx-3 my-3 w-full rounded-md bg-primary-dark px-4 py-4 lg:max-w-[315px]">
               <div className="flex flex-row justify-between">
-                <h3 className="mb-2 text-lg font-semibold text-[#b5b5b5]">{project.title}</h3>
+                <h3 className="mb-2 text-lg font-semibold text-secondary-grey">{project.title}</h3>
                 <div className="text-gray-700">
                   <p>{project.date}</p>
                 </div>
               </div>
-              <p className="mb-2 font-medium italic text-[#b5b5b5]">{project.type}</p>
+              <p className="mb-2 italic font-medium text-secondary-grey">{project.type}</p>
               <p>{project.description}</p>
-              <div className="mb-2 mt-2 flex flex-row flex-wrap text-[#b5b5b5]">
+              <div className="flex flex-row flex-wrap mt-2 mb-2 text-secondary-grey">
                 {project.technologies.map((technology: any, index: number) => {
                   return (
                     <span key={index} className="py-1 pr-1 mr-1 font-semibold">
@@ -37,12 +37,12 @@ const Projects = ({ data }: any) => {
               <div className="text-md">
                 {project.github.map((github: any, index: number) => {
                   return (
-                    <Link key={index} className="pr-3 text-[#b5b5b5] hover:text-[#fff]" href={github.link}>
+                    <Link key={index} className="pr-3 text-secondary-grey hover:text-white" href={github.link}>
                       {github.title}
                     </Link>
                   );
                 })}
-                <Link className=" text-[#b5b5b5] hover:text-[#fff]" href={project.link}>
+                <Link className=" text-secondary-grey hover:text-white" href={project.link}>
                   Link
                 </Link>
               </div>
