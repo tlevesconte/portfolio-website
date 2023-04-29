@@ -17,8 +17,8 @@ function makeWordsBold(input: any) {
 export const Hero = ({ data }: any) => {
   return (
     // Header section
-    <header className="h-screen w-full bg-[#15161B] sm:h-[55vh]">
-      <div className="absolute z-[100] flex h-screen w-full flex-col items-center justify-center px-2 text-center text-[#ffffff] sm:h-[55vh] ">
+    <header className="h-screen w-full bg-primary-dark sm:h-[55vh]">
+      <div className="absolute z-[100] flex h-screen w-full flex-col items-center justify-center px-2 text-center text-white sm:h-[55vh] ">
         {/* Heading */}
         <h1 className="mb-3 text-4xl font-semibold sm:text-5xl md:text-6xl">{data.heading}</h1>
 
@@ -30,13 +30,13 @@ export const Hero = ({ data }: any) => {
           {data.socials.map((social: any, index: number) => {
             if (social.title == 'cv') {
               return (
-                <Link className="mx-4 text-[#ffffff]" key={index} title={social.title} href={social.url}>
+                <Link className="mx-4 text-white" key={index} title={social.title} href={social.url}>
                   {<social.icon />}
                 </Link>
               );
             } else {
               return (
-                <Link className="mx-4 text-[#ffffff]" key={index} title={social.title} href={social.url}>
+                <Link className="mx-4 text-white" key={index} title={social.title} href={social.url}>
                   {<social.icon />}
                 </Link>
               );
@@ -46,7 +46,7 @@ export const Hero = ({ data }: any) => {
       </div>
 
       {/* Icosahedron Displacement Object */}
-      <motion.div className="h-screen w-full bg-[#15161B] sm:h-[55vh]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 4 }}>
+      <motion.div className="h-screen w-full sm:h-[55vh]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 4 }}>
         <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
           <IcosahedronDisplacement />
         </Canvas>

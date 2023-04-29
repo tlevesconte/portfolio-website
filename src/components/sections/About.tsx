@@ -6,7 +6,7 @@ const About = ({ data }: any) => {
     // About section
     <section id="about" className="mx-auto max-w-[975px] pt-[100px]">
       {/* About Heading*/}
-      <h2 className="mb-9 flex items-center text-2xl font-semibold text-[#b5b5b5]">
+      <h2 className="flex items-center text-2xl font-semibold mb-9 text-secondary-grey">
         <span className="mr-3 text-xl font-normal text-gray-700">01. </span>
         {data.sectionHeading}
         <div className="ml-5 h-px w-[130px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
@@ -19,14 +19,14 @@ const About = ({ data }: any) => {
           <p>{data.firstParagraph}</p>
           <p className="mt-3">
             {data.secondParagraph}
-            <a href={data.email} className="font-bold text-[#b5b5b5] hover:text-[#fff] hover:underline">
+            <a href={data.email} className="font-bold text-secondary-grey hover:text-white hover:underline">
               email
             </a>
           </p>
 
           {/* Skills */}
           <p className="mt-3">{data.technologiesIntroduction}</p>
-          <ul className="mt-10 flex flex-row justify-center text-[#b5b5b5] sm:mt-3 sm:justify-normal">
+          <ul className="flex flex-row justify-center mt-10 text-secondary-grey sm:mt-3 sm:justify-normal">
             <div>
               {data.firstTechnologiesCol.map((skill: any, index: number) => {
                 return (

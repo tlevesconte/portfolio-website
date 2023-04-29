@@ -51,15 +51,15 @@ const Navbar = ({ data }: any) => {
     // Navbar
     <nav>
       {/* Navbar top */}
-      <div className={`fixed flex items-center justify-between ${navbarState ? 'top-0' : 'top-[-69px]'} ${navbarShadow ? 'shadow-xl' : ''} z-[101] h-[70px] w-full px-6 text-[#ffffff]  backdrop-blur transition-all duration-300 sm:px-14`}>
-        <Link className="hover:text-[#b5b5b5]" href="/">
+      <div className={`fixed flex items-center justify-between ${navbarState ? 'top-0' : 'top-[-69px]'} ${navbarShadow ? 'shadow-xl' : ''} z-[101] h-[70px] w-full px-6 text-white  backdrop-blur transition-all duration-300 sm:px-14`}>
+        <Link className="hover:text-secondary-grey" href="/">
           {data.handle}
         </Link>
         <ol className="items-center hidden md:flex">
           {data.sections.map((section: any, index: number) => {
             return (
               <li key={index} className="ml-8">
-                <Link className="transition-colors hover:text-[#b5b5b5]" key={index} href={section.url}>
+                <Link className="transition-colors hover:text-secondary-grey" key={index} href={section.url}>
                   <span className="mr-1 text-xs text-gray-700">0{index + 1}.</span>
                   {section.title}
                 </Link>
@@ -71,7 +71,7 @@ const Navbar = ({ data }: any) => {
 
       {/* Navbar aside toggler */}
       <div className={`fixed right-[24px] z-[105] sm:right-[56px] ${navbarState ? 'top-[24px]' : 'top-[-69px]'} transition-all duration-300`}>
-        <button onClick={toggleHamburger} className="text-[#ffffff] md:hidden">
+        <button onClick={toggleHamburger} className="text-white md:hidden">
           {hamburgerState ? 'Close' : 'Menu'}
         </button>
       </div>
@@ -81,12 +81,12 @@ const Navbar = ({ data }: any) => {
         {/* Background blur */}
         <div className={`fixed z-[102] h-full w-full backdrop-blur ${hamburgerState ? '' : 'hidden'}`}></div>
         {/* Aside menu */}
-        <aside className={`fixed top-0 z-[103] flex h-full w-[75%] items-center justify-center bg-[#191A1F] text-center text-xl text-white sm:w-[55%] ${hamburgerState ? 'right-0' : 'right-[-100%]'} shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-200`}>
+        <aside className={`fixed top-0 z-[103] flex h-full w-[75%] items-center justify-center bg-secondary-grey text-center text-xl text-white sm:w-[55%] ${hamburgerState ? 'right-0' : 'right-[-100%]'} shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-200`}>
           <ol className="flex flex-col">
             {data.sections.map((section: any, index: number) => {
               return (
                 <li key={index} className="mb-10">
-                  <Link onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-[#b5b5b5] sm:text-xl" href={section.url}>
+                  <Link onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-secondary-grey sm:text-xl" href={section.url}>
                     <span key={index} className="text-sm text-gray-700">
                       0{index + 1}.
                     </span>
