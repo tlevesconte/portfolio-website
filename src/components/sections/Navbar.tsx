@@ -81,7 +81,7 @@ const Navbar = ({ data }: any) => {
         {/* Background blur */}
         <div className={`fixed z-[102] h-full w-full backdrop-blur ${hamburgerState ? '' : 'hidden'}`}></div>
         {/* Aside menu */}
-        <aside className={`fixed top-0 z-[103] flex h-full w-[75%] items-center justify-center bg-secondary-grey text-center text-xl text-white sm:w-[55%] ${hamburgerState ? 'right-0' : 'right-[-100%]'} shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-200`}>
+        <aside className={`fixed top-0 z-[103] flex h-full w-[75%] items-center justify-center bg-secondary-dark text-center text-xl text-white sm:w-[55%] ${hamburgerState ? 'right-0' : 'right-[-100%]'} shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-200`}>
           <ol className="flex flex-col">
             {data.sections.map((section: any, index: number) => {
               return (
