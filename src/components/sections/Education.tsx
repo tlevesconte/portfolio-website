@@ -7,7 +7,7 @@ const Education = ({ data }: any) => {
     <section id="education" className="mx-auto flex max-w-[625px] flex-col pt-[100px]">
       {/* Education Header */}
       <h2 className="flex items-center text-2xl font-semibold mb-9 text-secondary-grey">
-        <span className="mr-3 text-xl font-normal text-gray-700">02. </span>
+        <span className="mr-3 text-xl font-normal bg-gradient-to-br from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-transparent bg-clip-text">02. </span>
         {data.sectionHeading}
         <div className="ml-5 h-px w-[180px] bg-gray-700/30 sm:w-[130px] md:w-[220px] lg:w-[290px]"></div>
       </h2>
