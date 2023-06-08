@@ -7,7 +7,7 @@ const Contact = ({ data }: any) => {
       {/* Contact Header */}
 
       <h2 className="flex items-center text-3xl font-semibold mb-9 text-secondary-grey">
-        <span className="mr-3 text-xl font-normal bg-gradient-to-br from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-transparent bg-clip-text">04. </span>
+        <span className="mr-3 text-xl font-normal text-gray-700">04. </span>
         {data.sectionHeading}
       </h2>
 

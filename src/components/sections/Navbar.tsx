@@ -60,7 +60,7 @@ const Navbar = ({ data }: any) => {
             return (
               <li key={index} className="ml-8">
                 <Link className="transition-colors hover:text-secondary-grey" key={index} href={section.url}>
-                  <span className="mr-1 text-xs bg-gradient-to-br from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-transparent bg-clip-text">0{index + 1}.</span>
+                  <span className="mr-1 text-xs text-gray-700">0{index + 1}.</span>
                   {section.title}
                 </Link>
               </li>
@@ -87,7 +87,7 @@ const Navbar = ({ data }: any) => {
               return (
                 <li key={index} className="mb-10">
                   <Link onClick={toggleHamburger} className="flex flex-col text-lg transition-colors hover:text-secondary-grey sm:text-xl" href={section.url}>
-                    <span key={index} className="text-sm bg-gradient-to-br from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-transparent bg-clip-text">
+                    <span key={index} className="text-sm text-gray-700">
                       0{index + 1}.
                     </span>
                     {section.title}
