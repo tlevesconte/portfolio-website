@@ -187,7 +187,7 @@ export const projectContent = {
           title: 'NextJS',
         },
         {
-          title: 'TypeScript',
+          title: 'TS',
         },
         {
           title: 'TWCSS',
@@ -217,7 +217,7 @@ export const projectContent = {
           title: 'CSS',
         },
         {
-          title: 'JavaScript',
+          title: 'JS',
         },
       ],
       github: [

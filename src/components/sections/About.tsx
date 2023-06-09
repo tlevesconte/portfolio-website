@@ -61,7 +61,7 @@ const About = ({ data }: any) => {
         </div>
 
         {/* About Picture */}
-        <div className="basis-41 max-h-[225px] max-w-[225px] pl-0 pt-10 grayscale hover:grayscale-0 sm:max-h-[250px] sm:max-w-[250px] sm:pl-10 md:pt-0">
+        <div className="basis-41 max-h-[225px] max-w-[225px] pl-0 pt-10 sm:max-h-[250px] sm:max-w-[250px] sm:pl-10 md:pt-0">
           <Image src={data.profilePicture} className="rounded-md" alt={data.alt} placeholder="blur"></Image>
         </div>
       </div>
