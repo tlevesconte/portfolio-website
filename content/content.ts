@@ -11,7 +11,7 @@ import CardiffMet from '../public/images/cardiff-met-logo.png';
 import ProfilePicture from '../public/images/profile-picture.jpg';
 
 // Constants
-export const EMAIL = 'tomaslevesconte.com';
+export const EMAIL = 'tomaslv.dev@gmail.com';
 
 /**
  * Navbar
