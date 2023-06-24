@@ -11,7 +11,7 @@ import CardiffMet from '../public/images/cardiff-met-logo.png';
 import ProfilePicture from '../public/images/profile-picture.jpg';
 
 // Constants
-export const EMAIL = 'tomaslevesconte.com';
+export const EMAIL = 'tomaslv.dev@gmail.com';
 
 /**
  * Navbar
@@ -236,7 +236,7 @@ export const projectContent = {
  */
 export const contactContent = {
   sectionHeading: 'Get In Touch',
-  description: "I'm currently looking for work, so if you have an opportunity you'd like to dicuss, don't hesitate to contact me!",
+  description: "I'm currently looking for work, so if you have an opportunity you'd like to discuss, don't hesitate to contact me!",
   buttonText: 'Message me!',
   email: 'mailto:' + EMAIL,
 };
