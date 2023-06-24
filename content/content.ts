@@ -236,7 +236,7 @@ export const projectContent = {
  */
 export const contactContent = {
   sectionHeading: 'Get In Touch',
-  description: "I'm currently looking for work, so if you have an opportunity you'd like to dicuss, don't hesitate to contact me!",
+  description: "I'm currently looking for work, so if you have an opportunity you'd like to discuss, don't hesitate to contact me!",
   buttonText: 'Message me!',
   email: 'mailto:' + EMAIL,
 };
