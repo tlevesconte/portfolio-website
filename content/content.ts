@@ -56,8 +56,8 @@ export const heroContent = {
       icon: SiLinkedin,
     },
     {
-      title: 'Sorry, not available right now',
-      url: '',
+      title: 'CV',
+      url: 'https://drive.google.com/file/d/1vdmKu8RlohQiHMjRl9MnwbhZncA8bBgK/view?usp=sharing',
       icon: FaFileDownload,
     },
     {
