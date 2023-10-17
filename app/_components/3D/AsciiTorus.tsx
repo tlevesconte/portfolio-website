@@ -7,7 +7,6 @@ interface AsciiRendererProps {
   renderIndex?: number;
   characters?: string;
   invert?: boolean;
-  // Add any other props you want here
 }
 
 const AsciiRenderer: React.FC<AsciiRendererProps> = ({
@@ -30,8 +29,13 @@ const AsciiRenderer: React.FC<AsciiRendererProps> = ({
 
   useEffect(() => {
     gl.domElement.parentNode?.appendChild(effect.domElement);
-    return () => gl.domElement.parentNode?.removeChild(effect.domElement);
+    return () => {
+      if (gl.domElement.parentNode) {
+        gl.domElement.parentNode.removeChild(effect.domElement);
+      }
+    };
   }, [effect, gl.domElement.parentNode]);
+  
 
   useEffect(() => {
     effect.setSize(size.width, size.height);
@@ -40,29 +44,26 @@ const AsciiRenderer: React.FC<AsciiRendererProps> = ({
   useFrame((state) => {
     effect.render(scene, camera);
   }, renderIndex);
+
+  return null;
 };
 
 const AsciiTorus: React.FC = () => {
-  const meshRef = useRef<THREE.Mesh>();
+  const meshRef = useRef<any>(null);
 
   useFrame(() => {
     if (!meshRef.current) {
       return;
     }
 
-    // Add random variations to rotation angles
-    // const rotationSpeedX = 0.004 + (Math.random() - 0.5) * 0.0002;
     const rotationSpeedY = 0.004 + (Math.random() - 0.5) * 0.00005;
-
-    // meshRef.current.rotation.x += rotationSpeedX;
     meshRef.current.rotation.y += rotationSpeedY;
   });
 
   return (
     <mesh ref={meshRef}>
       <torusGeometry args={[2, .9, 30, 100]} />
-      <meshStandardMaterial color="white" />
-      {/* <OrbitControls enableZoom={false} /> */}
+      <meshStandardMaterial />
       <AsciiRenderer />
     </mesh>
   );
