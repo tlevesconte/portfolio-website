@@ -23,6 +23,7 @@ const AsciiRenderer: React.FC<AsciiRendererProps> = ({
     effect.domElement.style.left = "0px";
     effect.domElement.style.color = "white";
     effect.domElement.style.backgroundColor = "#111111";
+    effect.domElement.style.borderRadius = "0.25rem"
     effect.domElement.style.pointerEvents = "none";
     return effect;
   }, [characters, options.invert]);

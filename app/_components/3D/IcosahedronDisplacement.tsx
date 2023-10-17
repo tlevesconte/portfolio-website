@@ -30,7 +30,7 @@ const IcosahedronDisplacement = () => {
 
   return (
     <mesh ref={meshRef} position={[0, 0, 0]} scale={1.5}>
-      <icosahedronGeometry args={[2.8, 20]} />
+      <icosahedronGeometry args={[2.9, 20]} />
       <shaderMaterial fragmentShader={fragmentShader} vertexShader={vertexShader} uniforms={uniforms} wireframe={false} />
     </mesh>
   );
