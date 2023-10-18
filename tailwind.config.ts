@@ -12,6 +12,7 @@ const config: Config = {
         paragraphColour: "rgba(0, 0, 0, 0.75)",
         highlightColour: "rgba(0, 0, 0, 0.85)",
         captionColour: "rgba(0, 0, 0, 0.50)",
+        footerColour: "rgba(0, 0, 0, 0.40)"
       },
     },
   },

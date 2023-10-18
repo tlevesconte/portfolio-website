@@ -17,7 +17,7 @@ export default function ThreeJS() {
               <IcosahedronDisplacement />
             </Canvas>
           </div>
-          <figcaption className="text-captionColour mt-2 text-[.8em] italic">
+          <figcaption className="mt-2 text-[.8em] italic text-captionColour">
             Icosahedron Displacment, created with{" "}
             <a
               className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
@@ -31,34 +31,32 @@ export default function ThreeJS() {
         </figure>
 
         {/* Ascii Torus (Grid Item 2) */}
-        <div className="flex flex-col">
-          <figure>
-            <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border object-cover shadow-lg">
-              <Canvas>
-                <pointLight position={[4, 3, 3]} intensity={20.0} />
-                <AsciiTorus />
-              </Canvas>
-            </div>
-            <figcaption className="text-captionColour mt-2 text-[.8em] italic">
-              Ascii Torus, created with{" "}
-              <a
-                className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
-                href="https://docs.pmnd.rs/react-three-fiber/getting-started/introduction"
-                target="_blank"
-                rel="noopener noreferrer">
-                R3F
-              </a>{" "}
-              &{" "}
-              <a
-                className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
-                href="https://github.com/pmndrs/three-stdlib"
-                target="_blank"
-                rel="noopener noreferrer">
-                three-stdlib
-              </a>
-            </figcaption>
-          </figure>
-        </div>
+        <figure>
+          <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border bg-[#111111] object-cover shadow-lg">
+            <Canvas>
+              <pointLight position={[4, 3, 3]} intensity={20.0} />
+              <AsciiTorus />
+            </Canvas>
+          </div>
+          <figcaption className="mt-2 text-[.8em] italic text-captionColour">
+            Ascii Torus, created with{" "}
+            <a
+              className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
+              href="https://docs.pmnd.rs/react-three-fiber/getting-started/introduction"
+              target="_blank"
+              rel="noopener noreferrer">
+              R3F
+            </a>{" "}
+            &{" "}
+            <a
+              className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
+              href="https://github.com/pmndrs/three-stdlib"
+              target="_blank"
+              rel="noopener noreferrer">
+              three-stdlib
+            </a>
+          </figcaption>
+        </figure>
       </div>
     </section>
   );

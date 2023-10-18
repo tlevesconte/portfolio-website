@@ -12,11 +12,19 @@ export default function Header() {
             tomas.levesconte@gmail.com
           </a>
           . You can also find me on{" "}
-          <a className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]">
+          <a
+            className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
+            href="https://github.com/tlevesconte"
+            target="_blank"
+            rel="noopener noreferrer">
             GitHub
           </a>{" "}
           and{" "}
-          <a className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]">
+          <a
+            className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
+            href="https://www.linkedin.com/in/tomas-levesconte/"
+            target="_blank"
+            rel="noopener noreferrer">
             LinkedIn
           </a>
           .

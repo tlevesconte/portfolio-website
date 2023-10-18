@@ -15,88 +15,78 @@ import { DiMysql, DiScrum } from "react-icons/di";
 import { PiFileSqlFill } from "react-icons/pi";
 
 export default function Skills() {
+  const skillsData = [
+    {
+      category: "Languages",
+      items: [
+        { icon: <BiLogoJavascript />, name: "JavaScript" },
+        { icon: <BiLogoTypescript />, name: "TypeScript" },
+        { icon: <BiLogoJava />, name: "Java" },
+        { icon: <PiFileSqlFill />, name: "SQL" },
+      ],
+    },
+    {
+      category: "Backend",
+      items: [
+        { icon: <BiLogoSpringBoot />, name: "Spring" },
+        { icon: <SiSpringboot />, name: "SpringBoot" },
+      ],
+    },
+    {
+      category: "Frontend",
+      items: [
+        { icon: <BiLogoReact />, name: "React" },
+        { icon: <TbBrandNextjs />, name: "NextJS" },
+        { icon: <BiLogoHtml5 />, name: "HTML" },
+        { icon: <BiLogoCss3 />, name: "CSS" },
+        { icon: <BiLogoTailwindCss />, name: "TailwindCSS" },
+      ],
+    },
+    {
+      category: "DM",
+      items: [
+        { icon: <DiMysql />, name: "MySQL" },
+        { icon: <SiSanity />, name: "Sanity" },
+        { icon: <BiLogoWordpress />, name: "Wordpress" },
+      ],
+    },
+    {
+      category: "DevOps",
+      items: [
+        { icon: <SiOpenstack />, name: "OpenStack" },
+        { icon: <SiTerraform />, name: "Terraform" },
+        { icon: <SiJenkins />, name: "Jenkins" },
+      ],
+    },
+    {
+      category: "Agile",
+      items: [
+        { icon: <DiScrum />, name: "Scrum" },
+        { icon: <TbLayoutKanban />, name: "Kanban" },
+      ],
+    },
+  ];
+
   return (
     <section className="mb-[2.5em]">
       <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">Skills</h2>
       <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-paragraphColour">
         Here are some of the tools and technologies I've used recently:
       </p>
-      <div className="grid grid-cols-2 gap-y-2 text-[1em] leading-[1.5] text-paragraphColour sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 lg:gap-y-0">
-        <ul>
-          <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">Languages</li>
-          <li className="flex flex-row items-center gap-1">
-            <BiLogoJavascript />
-            JavaScript
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <BiLogoTypescript /> TypeScript
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <BiLogoJava /> Java
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <PiFileSqlFill /> SQL
-          </li>
-        </ul>
-        <ul>
-          <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">Backend</li>
-          <li className="flex flex-row items-center gap-1">
-            <BiLogoSpringBoot /> Spring
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <SiSpringboot /> SpringBoot
-          </li>
-        </ul>
-        <ul>
-          <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">Frontend</li>
-          <li className="flex flex-row items-center">
-            <BiLogoReact /> React/
-            <TbBrandNextjs /> NextJS
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <BiLogoHtml5 />
-            HTML
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <BiLogoCss3 /> CSS
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <BiLogoTailwindCss /> TailwindCSS
-          </li>
-        </ul>
-        <ul>
-          <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">DM</li>
-          <li className="flex flex-row items-center gap-1">
-            <DiMysql /> MySQL
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <SiSanity /> Sanity
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <BiLogoWordpress /> Wordpress
-          </li>
-        </ul>
-        <ul>
-          <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">DevOps</li>
-          <li className="flex flex-row items-center gap-1">
-            <SiOpenstack /> OpenStack
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <SiTerraform /> Terraform
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <SiJenkins /> Jenkins
-          </li>
-        </ul>
-        <ul>
-          <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">Agile</li>
-          <li className="flex flex-row items-center gap-1">
-            <DiScrum /> Scrum
-          </li>
-          <li className="flex flex-row items-center gap-1">
-            <TbLayoutKanban /> Kanban
-          </li>
-        </ul>
+      <div className="grid grid-cols-2 gap-y-2 text-[1em] leading-[1.5] text-paragraphColour sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 lg:gap-y-0">
+        {skillsData.map((category, index) => (
+          <ul key={index}>
+            <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">
+              {category.category}
+            </li>
+            {category.items.map((item, itemIndex) => (
+              <li key={itemIndex} className="flex flex-row items-center gap-1">
+                {item.icon}
+                {item.name}
+              </li>
+            ))}
+          </ul>
+        ))}
       </div>
     </section>
   );
