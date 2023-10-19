@@ -12,6 +12,7 @@ export default function Projects() {
               <img
                 className="h-full w-full rounded object-cover shadow-lg hover:border"
                 src="/dan-wallace-drummer-screenshot.png"
+                alt="A screenshot of the danwallacedrummer.com website"
               />
             </a>
           </div>
@@ -39,6 +40,7 @@ export default function Projects() {
               <img
                 className="h-full w-full rounded object-cover shadow-lg hover:border"
                 src="/minimal-chess-screenshot.png"
+                alt="A screenshot of my minimalistic chess application"
               />
             </a>
           </div>
@@ -62,7 +64,7 @@ export default function Projects() {
               href="https://github.com/tlevesconte/typer"
               target="_blank"
               rel="noopener noreferrer">
-              <img className="h-full w-full rounded object-cover shadow-lg hover:border" src="/typer-screenshot.png" />
+              <img className="h-full w-full rounded object-cover shadow-lg hover:border" src="/typer-screenshot.png" alt="A screenshot of my typing test project" />
             </a>
           </div>
           <figcaption className="mt-2 text-[.8em] italic text-captionColour">
@@ -88,6 +90,7 @@ export default function Projects() {
               <img
                 className="h-full w-full rounded object-cover shadow-lg hover:border"
                 src="/bjss-desk-booker-screenshot.png"
+                alt="A screenshot of BJSS desk booker project"
               />
             </a>
           </div>
@@ -112,6 +115,7 @@ export default function Projects() {
               <img
                 className="h-full w-full rounded object-cover shadow-lg hover:border"
                 src="/disaster-dash-screenshot.png"
+                alt="A screenshot of the Disaster Dash project"
               />
             </a>
           </div>
