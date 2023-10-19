@@ -76,7 +76,7 @@ export default function Skills() {
     <section className="mb-[2.5em]">
       <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">Skills</h2>
       <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-paragraphColour">
-        Here are some of the tools and technologies I've used recently:
+        Here are some of the tools and technologies I&apos;ve used recently:
       </p>
       <div className="grid grid-cols-2 gap-y-2 text-[1em] leading-[1.5] text-paragraphColour sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 lg:gap-y-0">
         {skillsData.map((category, index) => (
