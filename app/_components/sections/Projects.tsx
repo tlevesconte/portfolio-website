@@ -7,11 +7,13 @@ export default function Projects() {
       <div className="grid grid-cols-2 gap-2 object-cover md:grid-cols-3">
         {/* Project 1 */}
         <figure>
-          <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border shadow-lg">
-            <img
-              className="h-full w-full rounded object-cover"
-              src="/dan-wallace-drummer-screenshot.png"
-            />
+          <div className="h-full max-h-[180px] min-h-[180px] w-full">
+            <a href="https://danwallacedrummer.com" target="_blank" rel="noopener noreferrer">
+              <img
+                className="h-full w-full rounded object-cover shadow-lg hover:border"
+                src="/dan-wallace-drummer-screenshot.png"
+              />
+            </a>
           </div>
           <figcaption className="mt-2 text-[.8em] italic text-captionColour">
             <a
@@ -29,11 +31,16 @@ export default function Projects() {
 
         {/* Project 2 */}
         <figure>
-          <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border shadow-lg">
-            <img
-              className="h-full w-full rounded object-cover"
-              src="/minimal-chess-screenshot.png"
-            />
+          <div className="h-full max-h-[180px] min-h-[180px] w-full">
+            <a
+              href="https://github.com/tlevesconte/minimal-chess"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img
+                className="h-full w-full rounded object-cover shadow-lg hover:border"
+                src="/minimal-chess-screenshot.png"
+              />
+            </a>
           </div>
           <figcaption className="mt-2 text-[.8em] italic text-captionColour">
             <a
@@ -50,8 +57,13 @@ export default function Projects() {
 
         {/* Project 3 */}
         <figure>
-          <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border shadow-lg">
-            <img className="h-full w-full rounded object-cover" src="/typer-screenshot.png" />
+          <div className="h-full max-h-[180px] min-h-[180px] w-full">
+            <a
+              href="https://github.com/tlevesconte/typer"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img className="h-full w-full rounded object-cover shadow-lg hover:border" src="/typer-screenshot.png" />
+            </a>
           </div>
           <figcaption className="mt-2 text-[.8em] italic text-captionColour">
             <a
@@ -68,11 +80,16 @@ export default function Projects() {
         </figure>
 
         <figure>
-          <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border shadow-lg">
-            <img
-              className="h-full w-full rounded object-cover"
-              src="/bjss-desk-booker-screenshot.png"
-            />
+          <div className="h-full max-h-[180px] min-h-[180px] w-full">
+            <a
+              href="https://github.com/tlevesconte/group-8-bjss-desk-booker"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img
+                className="h-full w-full rounded object-cover shadow-lg hover:border"
+                src="/bjss-desk-booker-screenshot.png"
+              />
+            </a>
           </div>
           <figcaption className="mt-2 text-[.8em] italic text-captionColour">
             <a
@@ -87,11 +104,16 @@ export default function Projects() {
         </figure>
 
         <figure>
-          <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border shadow-lg">
-            <img
-              className="h-full w-full rounded object-cover"
-              src="/disaster-dash-screenshot.png"
-            />
+          <div className="h-full max-h-[180px] min-h-[180px] w-full">
+            <a
+              href="https://github.com/tlevesconte/team-a-gamengage-disaster-dash"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img
+                className="h-full w-full rounded object-cover shadow-lg hover:border"
+                src="/disaster-dash-screenshot.png"
+              />
+            </a>
           </div>
           <figcaption className="mt-2 text-[.8em] italic text-captionColour">
             <a
