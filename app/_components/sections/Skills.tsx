@@ -13,6 +13,8 @@ import { SiSpringboot, SiSanity, SiOpenstack, SiTerraform, SiJenkins } from "rea
 import { TbBrandNextjs, TbLayoutKanban } from "react-icons/tb";
 import { DiMysql, DiScrum } from "react-icons/di";
 import { PiFileSqlFill } from "react-icons/pi";
+import { FaGitAlt } from "react-icons/fa";
+import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
 
 export default function Skills() {
   const skillsData = [
@@ -56,6 +58,9 @@ export default function Skills() {
         { icon: <SiOpenstack />, name: "OpenStack" },
         { icon: <SiTerraform />, name: "Terraform" },
         { icon: <SiJenkins />, name: "Jenkins" },
+        { icon: <FaGitAlt />, name: "Git" },
+        { icon: <AiFillGithub />, name: "GitHub" },
+        { icon: <AiFillGitlab />, name: "GitLab" },
       ],
     },
     {
