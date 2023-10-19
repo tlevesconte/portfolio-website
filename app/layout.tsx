@@ -9,7 +9,7 @@ const sitka = localFont({
 
 export const metadata: Metadata = {
   title: "Tomas Le Vesconte",
-  description: "Need to change this...",
+  description: "I'm a Software Engineer with dual British and Swedish nationality, now living in Sweden. If you'd like to get in touch, you can reach me at tomas.levesconte@gmail.com.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
