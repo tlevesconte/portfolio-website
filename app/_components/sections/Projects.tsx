@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Projects() {
   return (
     <section className="mb-[2.5em]">
@@ -9,9 +11,12 @@ export default function Projects() {
         <figure>
           <div className="h-full max-h-[180px] min-h-[180px] w-full">
             <a href="https://danwallacedrummer.com" target="_blank" rel="noopener noreferrer">
-              <img
+              <Image
                 className="h-full w-full rounded object-cover shadow-lg hover:border"
                 src="/dan-wallace-drummer-screenshot.png"
+                width={437}
+                height={267}
+                quality={100}
                 alt="A screenshot of the danwallacedrummer.com website"
               />
             </a>
@@ -37,9 +42,12 @@ export default function Projects() {
               href="https://github.com/tlevesconte/minimal-chess"
               target="_blank"
               rel="noopener noreferrer">
-              <img
+              <Image
                 className="h-full w-full rounded object-cover shadow-lg hover:border"
                 src="/minimal-chess-screenshot.png"
+                width={437}
+                height={267}
+                quality={100}
                 alt="A screenshot of my minimalistic chess application"
               />
             </a>
@@ -64,7 +72,14 @@ export default function Projects() {
               href="https://github.com/tlevesconte/typer"
               target="_blank"
               rel="noopener noreferrer">
-              <img className="h-full w-full rounded object-cover shadow-lg hover:border" src="/typer-screenshot.png" alt="A screenshot of my typing test project" />
+              <Image
+                className="h-full w-full rounded object-cover shadow-lg hover:border"
+                src="/typer-screenshot.png"
+                width={437}
+                height={267}
+                quality={100}
+                alt="A screenshot of my typing test project"
+              />
             </a>
           </div>
           <figcaption className="mt-2 text-[.8em] italic text-captionColour">
@@ -87,9 +102,12 @@ export default function Projects() {
               href="https://github.com/tlevesconte/group-8-bjss-desk-booker"
               target="_blank"
               rel="noopener noreferrer">
-              <img
+              <Image
                 className="h-full w-full rounded object-cover shadow-lg hover:border"
                 src="/bjss-desk-booker-screenshot.png"
+                width={437}
+                height={267}
+                quality={100}
                 alt="A screenshot of BJSS desk booker project"
               />
             </a>
@@ -112,9 +130,12 @@ export default function Projects() {
               href="https://github.com/tlevesconte/team-a-gamengage-disaster-dash"
               target="_blank"
               rel="noopener noreferrer">
-              <img
+              <Image
                 className="h-full w-full rounded object-cover shadow-lg hover:border"
                 src="/disaster-dash-screenshot.png"
+                width={437}
+                height={267}
+                quality={100}
                 alt="A screenshot of the Disaster Dash project"
               />
             </a>
