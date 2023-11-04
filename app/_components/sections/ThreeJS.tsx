@@ -6,7 +6,9 @@ export default function ThreeJS() {
   return (
     <section className="mb-[2.5em]">
       {/* Heading */}
-      <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">Three.js</h2>
+      <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">
+        Three.js
+      </h2>
 
       {/* Grid */}
       <div className="grid grid-cols-2 gap-2">
@@ -23,7 +25,8 @@ export default function ThreeJS() {
               className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
               href="https://docs.pmnd.rs/react-three-fiber/getting-started/introduction"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               R3F
             </a>{" "}
             & vertex/fragment shaders
@@ -44,7 +47,8 @@ export default function ThreeJS() {
               className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
               href="https://docs.pmnd.rs/react-three-fiber/getting-started/introduction"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               R3F
             </a>{" "}
             &{" "}
@@ -52,7 +56,8 @@ export default function ThreeJS() {
               className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
               href="https://github.com/pmndrs/three-stdlib"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+            >
               three-stdlib
             </a>
           </figcaption>

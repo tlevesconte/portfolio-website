@@ -9,7 +9,13 @@ import {
   BiLogoTailwindCss,
   BiLogoWordpress,
 } from "react-icons/bi";
-import { SiSpringboot, SiSanity, SiOpenstack, SiTerraform, SiJenkins } from "react-icons/si";
+import {
+  SiSpringboot,
+  SiSanity,
+  SiOpenstack,
+  SiTerraform,
+  SiJenkins,
+} from "react-icons/si";
 import { TbBrandNextjs, TbLayoutKanban } from "react-icons/tb";
 import { DiMysql, DiScrum } from "react-icons/di";
 import { PiFileSqlFill } from "react-icons/pi";
@@ -74,11 +80,13 @@ export default function Skills() {
 
   return (
     <section className="mb-[2.5em]">
-      <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">Skills</h2>
+      <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">
+        Skills
+      </h2>
       <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-paragraphColour">
         Here are some of the tools and technologies I&apos;ve used recently:
       </p>
-      <div className="grid grid-cols-2 gap-y-2 text-[1em] leading-[1.5] text-paragraphColour sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 lg:gap-y-0">
+      <div className="grid grid-cols-2 gap-y-2 text-[1em] justify-items-center sm:justify-items-start leading-[1.5] text-paragraphColour sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 lg:gap-y-0">
         {skillsData.map((category, index) => (
           <ul key={index}>
             <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">
