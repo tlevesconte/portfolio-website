@@ -8,8 +8,8 @@ export default function Home() {
     <main>
       <Experience />
       <Education />
-      <Projects />
       <Skills />
+      <Projects />
     </main>
   );
 }

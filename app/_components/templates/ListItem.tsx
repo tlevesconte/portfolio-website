@@ -8,7 +8,7 @@ export default function ListItem({
   description: String;
 }) {
   return (
-    <li className="flex flex-col sm:flex-row">
+    <li className="flex flex-col sm:flex-row border rounded p-2 hover:border-borderColourHover duration-300">
       <span className="font-bold text-dateColour min-w-[105px]">{date}</span>
       <span className="mx-2 hidden sm:block"> | </span>
       <div className="flex flex-col">

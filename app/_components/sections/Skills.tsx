@@ -25,7 +25,6 @@ import { AiFillGithub, AiFillGitlab } from "react-icons/ai";
 export default function Skills() {
   const skillsData = [
     {
-      category: "Languages",
       items: [
         { icon: <BiLogoJavascript />, name: "JavaScript" },
         { icon: <BiLogoTypescript />, name: "TypeScript" },
@@ -35,7 +34,6 @@ export default function Skills() {
       ],
     },
     {
-      category: "Backend",
       items: [
         { icon: <SiSpringboot />, name: "SpringBoot" },
         { icon: <BiLogoReact />, name: "React" },
@@ -45,7 +43,6 @@ export default function Skills() {
       ],
     },
     {
-      category: "Frontend",
       items: [
         { icon: <BiLogoTailwindCss />, name: "TailwindCSS" },
         { icon: <DiMysql />, name: "MySQL" },
@@ -54,7 +51,6 @@ export default function Skills() {
       ],
     },
     {
-      category: "DM",
       items: [
         { icon: <SiOpenstack />, name: "OpenStack" },
         { icon: <SiTerraform />, name: "Terraform" },
@@ -63,7 +59,6 @@ export default function Skills() {
       ],
     },
     {
-      category: "DevOps",
       items: [
         { icon: <AiFillGithub />, name: "GitHub" },
         { icon: <AiFillGitlab />, name: "GitLab" },
