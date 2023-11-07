@@ -17,9 +17,9 @@ export default function ProjectTile({
       rel="noopener noreferrer"
     >
       <div>
-        <h2 className="text-[1.1em] text-titleColour font-medium mb-2">
+        <h3 className="text-[1.1em] text-titleColour font-medium mb-2">
           {title}
-        </h2>
+        </h3>
         <p className="text-[.85em] text-descriptionColour">
           {description}
         </p>
