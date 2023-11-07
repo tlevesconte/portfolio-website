@@ -31,47 +31,42 @@ export default function Skills() {
         { icon: <BiLogoTypescript />, name: "TypeScript" },
         { icon: <BiLogoJava />, name: "Java" },
         { icon: <PiFileSqlFill />, name: "SQL" },
+        { icon: <BiLogoSpringBoot />, name: "Spring" },
       ],
     },
     {
       category: "Backend",
       items: [
-        { icon: <BiLogoSpringBoot />, name: "Spring" },
         { icon: <SiSpringboot />, name: "SpringBoot" },
+        { icon: <BiLogoReact />, name: "React" },
+        { icon: <TbBrandNextjs />, name: "NextJS" },
+        { icon: <BiLogoHtml5 />, name: "HTML" },
+        { icon: <BiLogoCss3 />, name: "CSS" },
       ],
     },
     {
       category: "Frontend",
       items: [
-        { icon: <BiLogoReact />, name: "React" },
-        { icon: <TbBrandNextjs />, name: "NextJS" },
-        { icon: <BiLogoHtml5 />, name: "HTML" },
-        { icon: <BiLogoCss3 />, name: "CSS" },
         { icon: <BiLogoTailwindCss />, name: "TailwindCSS" },
-      ],
-    },
-    {
-      category: "DM",
-      items: [
         { icon: <DiMysql />, name: "MySQL" },
         { icon: <SiSanity />, name: "Sanity" },
         { icon: <BiLogoWordpress />, name: "Wordpress" },
       ],
     },
     {
-      category: "DevOps",
+      category: "DM",
       items: [
         { icon: <SiOpenstack />, name: "OpenStack" },
         { icon: <SiTerraform />, name: "Terraform" },
         { icon: <SiJenkins />, name: "Jenkins" },
         { icon: <FaGitAlt />, name: "Git" },
-        { icon: <AiFillGithub />, name: "GitHub" },
-        { icon: <AiFillGitlab />, name: "GitLab" },
       ],
     },
     {
-      category: "Agile",
+      category: "DevOps",
       items: [
+        { icon: <AiFillGithub />, name: "GitHub" },
+        { icon: <AiFillGitlab />, name: "GitLab" },
         { icon: <DiScrum />, name: "Scrum" },
         { icon: <TbLayoutKanban />, name: "Kanban" },
       ],
@@ -86,12 +81,9 @@ export default function Skills() {
       <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-paragraphColour">
         Here are some of the tools and technologies I&apos;ve used recently:
       </p>
-      <div className="grid grid-cols-2 gap-y-2 text-[1em] justify-items-center sm:justify-items-start leading-[1.5] text-paragraphColour sm:grid-cols-4 md:grid-cols-6  md:gap-y-0">
+      <div className="grid grid-cols-3 gap-y-6 sm:grid-cols-5 sm:gap-y-0 text-[.85em] justify-items-start gap leading-[1.5] text-paragraphColour">
         {skillsData.map((category, index) => (
           <ul key={index}>
-            <li className="mb-[.2em] text-[1.2em] font-bold text-highlightColour">
-              {category.category}
-            </li>
             {category.items.map((item, itemIndex) => (
               <li key={itemIndex} className="flex flex-row items-center gap-1">
                 {item.icon}
