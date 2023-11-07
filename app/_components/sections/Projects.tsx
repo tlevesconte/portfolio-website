@@ -13,9 +13,9 @@ export default function Projects() {
           description={
             <>
               {" "}
-              A minimalistic desktop GUI for playing Chess, built with{" "}
+              A minimalistic chess application, built with{" "}
               <span className="text-highlightColour">Java</span> and{" "}
-              <span className="text-highlightColour">JavaFx</span>. Features
+              <span className="text-highlightColour">JavaFx</span>. Includes
               unique movement for each piece, legal move highlighting, en
               passant, castling and stalemate/checkmate detection.
             </>
@@ -28,7 +28,7 @@ export default function Projects() {
             <>
               A portfolio website I made for a client using NextJS, Sanity &
               TailwindCSS. All site content is served using a headless CMS
-              (Sanity.io). Also features a custom built justified image grid.
+              (Sanity.io). Also features a custom built justified image grid similar to Flickr & Unsplash.
             </>
           }
         />

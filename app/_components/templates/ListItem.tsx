@@ -9,7 +9,7 @@ export default function ListItem({
 }) {
   return (
     <li className="flex flex-col sm:flex-row">
-      <span className="font-bold text-dateColour min-w-[97px]">{date}</span>
+      <span className="font-bold text-dateColour min-w-[105px]">{date}</span>
       <span className="mx-2 hidden sm:block"> | </span>
       <div className="flex flex-col">
         <h3 className="text-titleColour">{title}</h3>

@@ -12,12 +12,12 @@ export default function Experience() {
           description="Remote"
         />
         <ListItem
-          date="2022"
+          date="2022 — 2022"
           title="Software Engineer @ GamEngage (via. Cardiff University)"
           description="Remote"
         />
         <ListItem
-          date="2021"
+          date="2021 — 2021"
           title="Software Engineer @ BJSS (via. Cardiff University)"
           description="Remote"
         />

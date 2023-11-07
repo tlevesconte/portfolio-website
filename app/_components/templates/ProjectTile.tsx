@@ -20,9 +20,7 @@ export default function ProjectTile({
         <h3 className="text-[1.1em] text-titleColour font-medium mb-2">
           {title}
         </h3>
-        <p className="text-[.85em] text-descriptionColour">
-          {description}
-        </p>
+        <p className="text-[.85em] text-descriptionColour">{description}</p>
       </div>
     </Link>
   );
