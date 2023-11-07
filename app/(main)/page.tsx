@@ -1,16 +1,15 @@
-// "use client";
-import ThreeJS from "@/app/_components/sections/ThreeJS";
+import Experience from "@/app/_components/sections/Experience";
 import Education from "@/app/_components/sections/Education";
-import Skills from "@/app/_components/sections/Skills";
 import Projects from "@/app/_components/sections/Projects";
+import Skills from "@/app/_components/sections/Skills";
 
 export default function Home() {
   return (
     <main>
-      {/* <ThreeJS /> */}
+      <Experience />
       <Education />
-      <Skills />
-      {/* <Projects /> */}
+      <Projects />
+      {/* <Skills /> */}
     </main>
   );
 }

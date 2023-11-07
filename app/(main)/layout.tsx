@@ -1,5 +1,5 @@
-import Header from "@/app/_components/Header";
-import Footer from "@/app/_components/Footer";
+import Header from "@/app/_components/sections/globals/Header";
+import Footer from "@/app/_components/sections/globals/Footer";
 
 export default function MainLayout({
   children,
@@ -7,7 +7,7 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="mx-auto my-[18vmin] max-w-4xl">
+    <div className="mx-auto my-[18vmin] max-w-2xl">
       <Header />
       {children}
       <Footer />
