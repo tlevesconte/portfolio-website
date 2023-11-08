@@ -10,8 +10,9 @@ export default function ProjectTile({
   description: React.ReactNode;
 }) {
   return (
+    // hover:border-borderColourHover 
     <Link
-      className="border rounded p-4 hover:border-borderColourHover duration-300"
+      className="border rounded p-4 duration-300 hover:bg-[#EBEBEB]"
       href={link}
       target="_blank"
       rel="noopener noreferrer"
