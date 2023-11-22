@@ -13,12 +13,12 @@ export default function Experience() {
         />
         <ListItem
           date="2022 — 2022"
-          title="Software Engineer @ GamEngage (via. Cardiff University)"
+          title="Software Engineer Intern @ GamEngage"
           description="Cardiff, Wales / Hybrid"
         />
         <ListItem
           date="2021 — 2021"
-          title="Software Engineer @ BJSS (via. Cardiff University)"
+          title="Software Engineer Intern @ BJSS"
           description="Cardiff, Wales / Hybrid"
         />
       </List>
