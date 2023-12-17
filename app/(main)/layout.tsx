@@ -7,10 +7,10 @@ export default function MainLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="mx-auto my-[18vmin] max-w-2xl">
+    <div className="lg:flex mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-4 lg:justify-between">
       <Header />
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

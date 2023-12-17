@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${sitka.className} px-[8%]`}>{children}</body>
+      <body className={`${sitka.className}`}>{children}</body>
     </html>
   );
 }

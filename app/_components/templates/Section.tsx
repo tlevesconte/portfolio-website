@@ -2,11 +2,11 @@ export default function Section({
   heading,
   children,
 }: {
-  heading: String
+  heading: String;
   children: React.ReactNode;
 }) {
   return (
-    <section className="mb-[2.5em]">
+    <section className="mb-[2.5em] lg:scroll-mt-24">
       <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">
         {heading}
       </h2>
