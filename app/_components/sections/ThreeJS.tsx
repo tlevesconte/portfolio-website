@@ -1,15 +1,15 @@
+"use client";
+
+import Section from "@/app/_components/templates/Section";
+
 import { Canvas } from "@react-three/fiber";
+
 import AsciiTorus from "@/app/_components/3D/AsciiTorus";
 import IcosahedronDisplacement from "@/app/_components/3D/IcosahedronDisplacement";
 
 export default function ThreeJS() {
   return (
-    <section className="mb-[2.5em]">
-      {/* Heading */}
-      <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">
-        Three.js
-      </h2>
-
+    <Section heading="Three.js">
       {/* Grid */}
       <div className="grid grid-cols-2 gap-2">
         {/* Icosahedron Displacment (Grid Item 1) */}
@@ -63,6 +63,6 @@ export default function ThreeJS() {
           </figcaption>
         </figure>
       </div>
-    </section>
+    </Section>
   );
 }
