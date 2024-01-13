@@ -4,7 +4,7 @@ import ListItem from "@/app/_components/templates/ListItem";
 
 export default function Experience() {
   return (
-    <Section heading="Experience">
+    <Section id="experience" heading="Experience">
       <List>
         <ListItem
           date="2021 — Now"

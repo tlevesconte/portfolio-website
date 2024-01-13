@@ -5,7 +5,7 @@ import ProjectTile from "../templates/ProjectTile";
 
 export default function Projects() {
   return (
-    <Section heading="Projects">
+    <Section id="projects" heading="Projects">
       <div className="grid sm:grid-cols-2 gap-4">
         <ProjectTile
           link={new URL("https://github.com/tlevesconte/minimal-chess")}

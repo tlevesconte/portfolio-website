@@ -4,16 +4,20 @@ import Projects from "@/app/_components/sections/Projects";
 import Skills from "@/app/_components/sections/Skills";
 import ThreeJS from "@/app/_components/sections/ThreeJS";
 import About from "@/app/_components/sections/About";
+import GrainyBackground from "../_components/GrainyBackground";
 
 export default function Home() {
   return (
-    <main className="lg:py-24 lg:w-1/2">
-      <About />
-      <ThreeJS />
-      <Experience />
-      <Education />
-      <Skills />
-      <Projects />
-    </main>
+    <>
+      
+      <main className="lg:py-24 lg:w-1/2">
+        <About />
+        <ThreeJS />
+        <Experience />
+        <Education />
+        {/* <Skills /> */}
+        <Projects />
+      </main>
+    </>
   );
 }
