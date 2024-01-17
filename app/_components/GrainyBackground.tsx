@@ -8,7 +8,7 @@ export default function GrainyBackground() {
       <filter id="noise">
         <feTurbulence
           type="fractalNoise"
-          baseFrequency="0.80"
+          baseFrequency="0.95"
           numOctaves="4"
           stitchTiles="stitch"
         />

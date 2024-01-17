@@ -27,8 +27,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${sitka.className} `}>
-        <GrainyBackground />
+      <body className={`${sitka.className}`}>
+        {/* <GrainyBackground /> */}
         {children}
       </body>
     </html>

@@ -10,7 +10,6 @@ export default function MainLayout({
     <div className="lg:flex mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-4 lg:justify-between">
       <Header />
       {children}
-      {/* <Footer /> */}
     </div>
   );
 }

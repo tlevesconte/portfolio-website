@@ -8,7 +8,7 @@ export default function Projects() {
     <Section id="projects" heading="Projects">
       <div className="grid sm:grid-cols-2 gap-4">
         <ProjectTile
-          link={new URL("https://github.com/tlevesconte/minimal-chess")}
+          link="https://github.com/tlevesconte/minimal-chess"
           title="minimal-chess"
           description={
             <>
@@ -22,20 +22,19 @@ export default function Projects() {
           }
         />
         <ProjectTile
-          link={new URL("https://danwallacedrummer.com")}
+          link="https://danwallacedrummer.com"
           title="danwallacedrummer.com"
           description={
             <>
               A portfolio website I made for a client using NextJS, Sanity &
               TailwindCSS. All site content is served using a headless CMS
-              (Sanity.io). Also features a custom built justified image grid similar to Flickr & Unsplash.
+              (Sanity.io). Also features a custom built justified image grid
+              similar to Flickr & Unsplash.
             </>
           }
         />
         <ProjectTile
-          link={
-            new URL("https://github.com/tlevesconte/group-8-bjss-desk-booker")
-          }
+          link="https://github.com/tlevesconte/group-8-bjss-desk-booker"
           title="group-8-bjss-desk-booker"
           description={
             <>
@@ -49,11 +48,7 @@ export default function Projects() {
           }
         />
         <ProjectTile
-          link={
-            new URL(
-              "https://github.com/tlevesconte/team-a-gamengage-disaster-dash"
-            )
-          }
+          link="https://github.com/tlevesconte/team-a-gamengage-disaster-dash"
           title="team-a-gamengage-disaster-dash"
           description={
             <>

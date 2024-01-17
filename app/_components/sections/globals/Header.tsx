@@ -3,8 +3,12 @@
 import React, { useState, useEffect, useRef } from "react";
 
 export default function Header() {
+
+
+
+  
   const [activeSection, setActiveSection] = useState<number>(0);
-  const sectionNames = ["about", "experience", "projects"];
+  const sectionNames = ["about", "experience", "education", "projects"];
   const sectionRefs = useRef<any>([]);
 
   useEffect(() => {
