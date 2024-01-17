@@ -4,9 +4,6 @@ import React, { useState, useEffect, useRef } from "react";
 
 export default function Header() {
 
-
-
-  
   const [activeSection, setActiveSection] = useState<number>(0);
   const sectionNames = ["about", "experience", "education", "projects"];
   const sectionRefs = useRef<any>([]);
@@ -38,15 +35,18 @@ export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:max-h-screen lg:py-24 lg:flex lg:w-1/2 lg:flex-col lg:justify-between mb-[2.5em] lg:mb-0">
       <div className="flex flex-col justify-center text-[1.2em]">
-        <h1 className="mb-[.8em] text-[2em] font-bold leading-[normal]">
+        <h1 className="text-[2em] font-bold leading-[normal]">
           {/* Hi! I&apos;m Tomas. */}
           Tomas Le Vesconte
         </h1>
+
+        <h2 className="text-[1.15em] mb-[2.5em]">Software Engineer</h2>
 
         {/* Navigation links */}
         <nav className="flex flex-col">
           {sectionNames.map((sectionName, index) => (
             <a
+              className="text-paragraphColour"
               key={index}
               href={`#${sectionName}`}
             >

@@ -9,11 +9,10 @@ import IcosahedronDisplacement from "@/app/_components/3D/IcosahedronDisplacemen
 
 export default function ThreeJS() {
   return (
-    <Section id="threejs" heading="Three.js">
-
+    // <Section id="threejs" heading="Three.js">
+    <div className="mt-[.8em]">
       {/* Grid */}
       <div className="grid grid-cols-2 gap-2">
-
         {/* Icosahedron Displacment (Grid Item 1) */}
         <figure>
           <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border object-cover shadow-lg">
@@ -65,6 +64,8 @@ export default function ThreeJS() {
           </figcaption>
         </figure>
       </div>
-    </Section>
+    </div>
+
+    // </Section>
   );
 }

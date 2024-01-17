@@ -1,5 +1,6 @@
 import Section from "@/app/_components/templates/Section";
 import Skills from "./Skills";
+import ThreeJS from "./ThreeJS";
 // &apos;
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
         {/* Possible replace keeping physically fit for running */}
         <p className="mb-[.8em]">
           In my spare time, I like to keep physically fit and set personal challenges
-          for myself, which at the moment involves a lot of long-distance
+          for myself, which at the moment involves a lot of 
           running. 
           {/* P.S.: I have both British and Swedish citizenship. */}
         </p>
@@ -46,8 +47,8 @@ export default function About() {
           .
         </p>
       </div>
-
       <Skills />
+      {/* <ThreeJS /> */}
     </Section>
   );
 }

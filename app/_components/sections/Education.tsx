@@ -4,7 +4,7 @@ import ListItem from "@/app/_components/templates/ListItem";
 
 export default function Education() {
   return (
-    <Section id="education" heading="Education">
+    <Section id="education" heading="s">
       <List>
         <ListItem
           date="2021 — 2023"

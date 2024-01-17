@@ -6,15 +6,17 @@ import ThreeJS from "@/app/_components/sections/ThreeJS";
 import About from "@/app/_components/sections/About";
 import GrainyBackground from "../_components/GrainyBackground";
 import Footer from "@/app/_components/sections/globals/Footer";
+import ComponentSwitcher from "../_components/ComponentSwitcher";
 
 export default function Home() {
   return (
     <>
       <main className="lg:py-24 lg:w-1/2">
         <About />
-        <ThreeJS />
-        <Experience />
-        <Education />
+        {/* <ThreeJS /> */}
+        <ComponentSwitcher />
+        {/* <Experience /> */}
+        {/* <Education /> */}
         {/* <Skills /> */}
         <Projects />
         <Footer />
