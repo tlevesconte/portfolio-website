@@ -2,11 +2,12 @@ import Link from "next/link";
 
 import Section from "@/app/_components/templates/Section";
 import ProjectTile from "../templates/ProjectTile";
+import ThreeJS from "./ThreeJS";
 
 export default function Projects() {
   return (
-    <Section id="projects" heading="Projects">
-      <div className="grid sm:grid-cols-2 gap-4">
+    <section className="lg:scroll-mt-24" id="projects">
+      {/* <div className="grid sm:grid-cols-2 gap-4">
         <ProjectTile
           link="https://github.com/tlevesconte/minimal-chess"
           title="minimal-chess"
@@ -61,7 +62,8 @@ export default function Projects() {
             </>
           }
         />
-      </div>
-    </Section>
+      </div> */}
+      <ThreeJS />
+    </section>
   );
 }

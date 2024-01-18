@@ -4,18 +4,18 @@ import ThreeJS from "./ThreeJS";
 // &apos;
 export default function About() {
   return (
-    <Section id="about" heading="About">
+    <section className="lg:scroll-mt-24 mb-[5em]" id="about">
       <div className="text-[1.2em] leading-[1.5] text-paragraphColour ">
         <p className="mb-[.8em]">
           Hi! I&apos;m Tomas, an aspiring Software Engineer living in Sweden.
-          Passionate about web development, I thrive on challenging projects and
-          love embracing new technologies. 
+          Passionate about full stack development, I thrive on challenging
+          projects and love embracing new technologies.
         </p>
         {/* Possible replace keeping physically fit for running */}
         <p className="mb-[.8em]">
-          In my spare time, I like to keep physically fit and set personal challenges
-          for myself, which at the moment involves a lot of 
-          running. 
+          In my spare time, I like to keep physically fit and set personal
+          challenges for myself, which at the moment involves a lot of
+          long-distance running.
           {/* P.S.: I have both British and Swedish citizenship. */}
         </p>
         <p className="mb-[.8em]">
@@ -49,6 +49,6 @@ export default function About() {
       </div>
       <Skills />
       {/* <ThreeJS /> */}
-    </Section>
+    </section>
   );
 }

@@ -1,35 +1,90 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import Experience from "./sections/Experience";
 import Education from "./sections/Education";
+import Projects from "./sections/Projects";
 
 export default function ComponentSwitcher() {
-  const [isExperienceActive, setIsExperienceActive] = useState<boolean>(false);
+  const [activeComponent, setActiveComponent] = useState<string>("projects");
+  const [selectedComponent, setSelectedComponent] = useState<React.ReactNode>(
+    <Projects />
+  );
 
-  const toggleComponent = () => {
-    setIsExperienceActive((prevIsExperienceActive) => !prevIsExperienceActive);
+  const toggleComponent = (component: string) => {
+    switch (component) {
+      case "experience":
+        setSelectedComponent(<Experience />);
+        break;
+      case "education":
+        setSelectedComponent(<Education />);
+        break;
+      case "projects":
+        setSelectedComponent(<Projects />);
+        break;
+      default:
+        break;
+    }
+
+    setActiveComponent(component);
   };
 
   return (
-    <div>
-      <div className="mb-[.8em] text-[1.4em] font-bold leading-[normal] flex flex-row gap-3">
-        <button onClick={isExperienceActive ? toggleComponent : undefined}>
+    <div className="mb-[5em]">
+      <div className="mb-[1.2em] text-[1.4em] font-bold leading-[normal] flex flex-row gap-5">
+        <button
+          onClick={() => {
+            if (activeComponent !== "experience") {
+              toggleComponent("experience");
+            }
+          }}
+        >
           <h2
-            className={isExperienceActive ? "text-red-900" : "text-green-700"}
+            className={
+              activeComponent !== "experience"
+                ? "text-paragraphColour border-b border-dotted border-black hover:bg-[#EBEBEB]"
+                : ""
+            }
           >
             Experience
           </h2>
         </button>
-        <button onClick={isExperienceActive ? undefined : toggleComponent}>
+        <button
+          onClick={() => {
+            if (activeComponent !== "education") {
+              toggleComponent("education");
+            }
+          }}
+        >
           <h2
-            className={isExperienceActive ? "text-green-700" : "text-red-900"}
+            className={
+              activeComponent !== "education"
+                ? "text-paragraphColour border-b border-dotted border-black hover:bg-[#EBEBEB]"
+                : ""
+            }
           >
             Education
           </h2>
         </button>
+        <button
+          onClick={() => {
+            if (activeComponent !== "projects") {
+              toggleComponent("projects");
+            }
+          }}
+        >
+          <h2
+            className={
+              activeComponent !== "projects"
+                ? "text-paragraphColour border-b border-dotted border-black hover:bg-[#EBEBEB]"
+                : ""
+            }
+          >
+            Projects
+          </h2>
+        </button>
       </div>
-      {isExperienceActive ? <Education /> : <Experience />}
+      {selectedComponent}
     </div>
   );
 }

@@ -4,7 +4,7 @@ import ListItem from "@/app/_components/templates/ListItem";
 
 export default function Experience() {
   return (
-    <Section id="experience" heading="s">
+    <section className="lg:scroll-mt-24" id="experience">
       <List>
         <ListItem
           date="2021 — Now"
@@ -22,6 +22,6 @@ export default function Experience() {
           description="Cardiff, Wales / Hybrid"
         />
       </List>
-    </Section>
+    </section>
   );
 }
