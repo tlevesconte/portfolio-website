@@ -1,5 +1,3 @@
-// "use client";
-
 import React from "react";
 
 export default function Header() {
@@ -14,17 +12,16 @@ export default function Header() {
 
         <h2 className="text-[1.15em] mb-[2.5em]">Software Engineer</h2>
 
-        {/* Navigation links */}
-        <nav className="flex flex-col">
-          {sectionNames.map((sectionName, index) => (
-            <a
-              className="text-paragraphColour"
-              key={index}
-              href={`#${sectionName}`}
-            >
-              {sectionName.charAt(0).toUpperCase() + sectionName.slice(1)}{" "}
-            </a>
-          ))}
+        <nav className="flex-col flex">
+          <ul>
+            {sectionNames.map((sectionName, index) => (
+              <li className="mb-1" key={index}>
+                <a className="text-paragraphColour" href={`#${sectionName}`}>
+                  {sectionName.charAt(0).toUpperCase() + sectionName.slice(1)}{" "}
+                </a>
+              </li>
+            ))}
+          </ul>
         </nav>
       </div>
     </header>
