@@ -41,7 +41,7 @@ export default function Header() {
           Tomas Le Vesconte
         </h1>
 
-        <h2 className="text-[1.15em] mb-1">Software Engineer</h2>
+        <h2 className="text-[1.15em] mb-[2.5em]">Software Engineer</h2>
 
         {/* <p className="mb-[2.5em]">
           This is a test sentence for the bottom of the header.

@@ -1,25 +1,47 @@
 "use client";
 
-import React, { useState } from "react";
 import Experience from "./sections/Experience";
 import Education from "./sections/Education";
 import Projects from "./sections/Projects";
+
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function ComponentSwitcher() {
   const [activeComponent, setActiveComponent] = useState<string>("projects");
   const [selectedComponent, setSelectedComponent] = useState<React.ReactNode>(
     <Projects />
   );
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash !== "#about") {
+        toggleComponent(
+          window.location.hash.slice(1, window.location.hash.length)
+        );
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
 
   const toggleComponent = (component: string) => {
     switch (component) {
       case "experience":
+        router.push("/#experience");
         setSelectedComponent(<Experience />);
         break;
       case "education":
+        router.push("/#education");
         setSelectedComponent(<Education />);
         break;
       case "projects":
+        router.push("/#projects");
         setSelectedComponent(<Projects />);
         break;
       default:
