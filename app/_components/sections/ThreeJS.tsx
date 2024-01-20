@@ -1,7 +1,5 @@
 "use client";
 
-import Section from "@/app/_components/templates/Section";
-
 import { Canvas } from "@react-three/fiber";
 
 import AsciiTorus from "@/app/_components/3D/AsciiTorus";

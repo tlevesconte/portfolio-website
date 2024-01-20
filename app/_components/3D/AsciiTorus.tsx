@@ -2,10 +2,8 @@ import React, { useRef, useMemo, useEffect } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import { AsciiEffect } from "three-stdlib";
 
-// Constants for readability
 const ASCII_CHARACTERS = " .:-+*=%@#";
 const ASCII_OPTIONS = {
-  /* your options here */
   resolution: 0.175,
 };
 

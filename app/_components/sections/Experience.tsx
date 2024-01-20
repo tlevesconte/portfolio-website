@@ -1,4 +1,3 @@
-import Section from "@/app/_components/templates/Section";
 import List from "@/app/_components/templates/List";
 import ListItem from "@/app/_components/templates/ListItem";
 

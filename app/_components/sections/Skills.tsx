@@ -1,4 +1,3 @@
-import Section from "@/app/_components/templates/Section";
 import {
   BiLogoTypescript,
   BiLogoJavascript,
@@ -70,7 +69,6 @@ export default function Skills() {
   ];
 
   return (
-    // <Section id="skills" heading="Skills">
     <>
       <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-paragraphColour">
         Here are some of the tools and technologies I&apos;ve used recently:
@@ -88,6 +86,5 @@ export default function Skills() {
         ))}
       </div>
     </>
-    // </Section>
   );
 }

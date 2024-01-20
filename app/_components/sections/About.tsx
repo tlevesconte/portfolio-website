@@ -1,14 +1,12 @@
-import Section from "@/app/_components/templates/Section";
 import Skills from "./Skills";
-import ThreeJS from "./ThreeJS";
-// &apos;
+
 export default function About() {
   return (
     <section className="lg:scroll-mt-24 mb-[5em]" id="about">
       <div className="text-[1.2em] leading-[1.5] text-paragraphColour ">
         <p className="mb-[.8em]">
           Hi! I&apos;m Tomas, an aspiring Software Engineer living in Sweden.
-          Passionate about full stack development, I thrive on challenging
+          Passionate about web development, I thrive on challenging
           projects and love embracing new technologies.
         </p>
         {/* Possible replace keeping physically fit for running */}
@@ -48,7 +46,6 @@ export default function About() {
         </p>
       </div>
       <Skills />
-      {/* <ThreeJS /> */}
     </section>
   );
 }

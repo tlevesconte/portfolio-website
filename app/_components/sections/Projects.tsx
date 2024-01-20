@@ -1,7 +1,3 @@
-import Link from "next/link";
-
-import Section from "@/app/_components/templates/Section";
-import ProjectTile from "../templates/ProjectTile";
 import ThreeJS from "./ThreeJS";
 
 export default function Projects() {
