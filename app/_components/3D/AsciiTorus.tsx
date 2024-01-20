@@ -2,12 +2,10 @@ import React, { useRef, useMemo, useEffect } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import { AsciiEffect } from "three-stdlib";
 
-// Constants for readability
 const ASCII_CHARACTERS = " .:-+*=%@#";
 const ASCII_OPTIONS = {
-  /* your options here */
+  resolution: 0.175,
 };
-const ROTATION_SPEED_Y = 0.004 + 0.5 * 0.0000000005;
 
 interface AsciiRendererProps {
   renderIndex?: number;
@@ -26,7 +24,7 @@ const AsciiRenderer: React.FC<AsciiRendererProps> = ({ renderIndex = 1 }) => {
     effect.domElement.style.borderRadius = "0.25rem";
     effect.domElement.style.pointerEvents = "none";
     return effect;
-  }, []);
+  }, [ASCII_OPTIONS.resolution]);
 
   useEffect(() => {
     gl.domElement.parentNode?.appendChild(effect.domElement);
@@ -51,12 +49,13 @@ const AsciiRenderer: React.FC<AsciiRendererProps> = ({ renderIndex = 1 }) => {
 const AsciiTorus: React.FC = () => {
   const meshRef = useRef<any>(null);
 
-  useFrame(() => {
+  useFrame((state, delta) => {
     if (!meshRef.current) {
       return;
     }
 
-    meshRef.current.rotation.y += ROTATION_SPEED_Y;
+    meshRef.current.rotation.x = meshRef.current.rotation.y += delta / 5;
+    meshRef.current.rotation.y = meshRef.current.rotation.x += delta / 5;
   });
 
   return (

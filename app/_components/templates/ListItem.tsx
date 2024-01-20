@@ -3,9 +3,9 @@ export default function ListItem({
   title,
   description,
 }: {
-  date: String;
-  title: String;
-  description: String;
+  date: string;
+  title: string;
+  description: string;
 }) {
   return (
     // hover:border-borderColourHover

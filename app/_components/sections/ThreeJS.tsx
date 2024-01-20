@@ -1,20 +1,19 @@
+"use client";
+
 import { Canvas } from "@react-three/fiber";
+
 import AsciiTorus from "@/app/_components/3D/AsciiTorus";
 import IcosahedronDisplacement from "@/app/_components/3D/IcosahedronDisplacement";
 
 export default function ThreeJS() {
   return (
-    <section className="mb-[2.5em]">
-      {/* Heading */}
-      <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">
-        Three.js
-      </h2>
-
+    // <Section id="threejs" heading="Three.js">
+    <div className="mt-[.8em]">
       {/* Grid */}
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-3 gap-2">
         {/* Icosahedron Displacment (Grid Item 1) */}
         <figure>
-          <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border object-cover shadow-lg">
+          <div className="h-full max-h-[160px] min-h-[160px] w-full rounded border object-cover shadow-lg">
             <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
               <IcosahedronDisplacement />
             </Canvas>
@@ -35,7 +34,7 @@ export default function ThreeJS() {
 
         {/* Ascii Torus (Grid Item 2) */}
         <figure>
-          <div className="h-full max-h-[180px] min-h-[180px] w-full rounded border bg-[#111111] object-cover shadow-lg">
+          <div className="h-full max-h-[160px] min-h-[160px] w-full rounded border bg-[#111111] object-cover shadow-lg">
             <Canvas>
               <pointLight position={[4, 3, 3]} intensity={20.0} />
               <AsciiTorus />
@@ -63,6 +62,8 @@ export default function ThreeJS() {
           </figcaption>
         </figure>
       </div>
-    </section>
+    </div>
+
+    // </Section>
   );
 }

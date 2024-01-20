@@ -1,16 +1,17 @@
 import Link from "next/link";
+import { UrlObject } from "url";
 
 export default function ProjectTile({
   link,
   title,
   description,
 }: {
-  link: URL;
-  title: String;
+  link: string;
+  title: string;
   description: React.ReactNode;
 }) {
   return (
-    // hover:border-borderColourHover 
+    // hover:border-borderColourHover
     <Link
       className="border rounded p-4 duration-300 hover:bg-[#EBEBEB]"
       href={link}

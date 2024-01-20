@@ -69,10 +69,7 @@ export default function Skills() {
   ];
 
   return (
-    <section className="mb-[2.5em]">
-      <h2 className="mb-[.8em] text-[1.4em] font-bold leading-[normal]">
-        Skills
-      </h2>
+    <>
       <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-paragraphColour">
         Here are some of the tools and technologies I&apos;ve used recently:
       </p>
@@ -88,6 +85,6 @@ export default function Skills() {
           </ul>
         ))}
       </div>
-    </section>
+    </>
   );
 }
