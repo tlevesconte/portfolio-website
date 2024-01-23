@@ -12,7 +12,7 @@ export default function Header() {
 
         <h2 className="text-[1.15em] mb-[2.5em]">Software Engineer</h2>
 
-        <nav className="flex-col flex">
+        <nav className="flex-col hidden lg:flex">
           <ul>
             {sectionNames.map((sectionName, index) => (
               <li className="mb-1" key={index}>

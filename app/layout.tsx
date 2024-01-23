@@ -17,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Tomas Le Vesconte",
   description:
-    "I'm a Software Engineer with dual British and Swedish nationality, now living in Sweden. If you'd like to get in touch, you can reach me at tomas.levesconte@gmail.com.",
+    "Hi! I'm Tomas, an aspiring Software Engineer living in Sweden. Passionate about web development, I thrive on challenging projects and love embracing new technologies.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${sitka.className}`}>
-        <div className="lg:flex mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-4 lg:justify-between">
+        <div className="lg:flex mx-auto min-h-screen max-w-screen-2xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-4 lg:justify-between">
           <Header />
           {children}
         </div>
