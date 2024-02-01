@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Header() {
-  const sectionNames = ["about", "experience", "education", "projects"];
+  // const sectionNames = ["about", "experience", "education", "projects"];
 
   return (
     <header className="lg:sticky lg:top-0 lg:max-h-screen lg:py-24 lg:flex lg:w-1/2 lg:flex-col lg:justify-between mb-[2.5em] lg:mb-0">
@@ -14,13 +14,33 @@ export default function Header() {
 
         <nav className="flex-col hidden lg:flex">
           <ul>
-            {sectionNames.map((sectionName, index) => (
+            <li className="mb-1">
+              <a className="text-paragraphColour" href="#about">
+                About
+              </a>
+            </li>
+            <li className="mb-1">
+              <a className="text-paragraphColour" href="#experience">
+                Experience
+              </a>
+            </li>
+            <li className="mb-1">
+              <a className="text-paragraphColour" href="#education">
+                Education
+              </a>
+            </li>
+            <li className="mb-1">
+              <a className="text-paragraphColour" href="#projects">
+                Projects
+              </a>
+            </li>
+            {/* {sectionNames.map((sectionName, index) => (
               <li className="mb-1" key={index}>
                 <a className="text-paragraphColour" href={`#${sectionName}`}>
                   {sectionName.charAt(0).toUpperCase() + sectionName.slice(1)}{" "}
                 </a>
               </li>
-            ))}
+            ))} */}
           </ul>
         </nav>
       </div>
