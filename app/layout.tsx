@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Inter } from "next/font/google";
-import Header from "./_components/sections/globals/Header";
 
 const sitka = localFont({
   src: "./sitka.ttf",
@@ -27,12 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${sitka.className}`}>
-        <div className="lg:flex mx-auto min-h-screen max-w-screen-2xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 lg:gap-4 lg:justify-between">
-          <Header />
-          {children}
-        </div>
-      </body>
+      <body className={`${sitka.className}`}>{children}</body>
     </html>
   );
 }
