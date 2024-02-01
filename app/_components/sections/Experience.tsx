@@ -6,7 +6,7 @@ export default function Experience() {
     <section className="lg:scroll-mt-24" id="experience">
       <List>
         <ListItem
-          date="2021 — Now"
+          date="2022 — Now"
           title="Web Developer @ Freelance"
           description="Remote"
         />
