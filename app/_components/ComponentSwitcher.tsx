@@ -10,7 +10,7 @@ import { useRouter } from "next/navigation";
 export default function ComponentSwitcher() {
   const [activeComponent, setActiveComponent] = useState<string>("projects");
   const [selectedComponent, setSelectedComponent] = useState<React.ReactNode>(
-    <Projects />
+    <Projects />,
   );
   const router = useRouter();
 
@@ -18,7 +18,7 @@ export default function ComponentSwitcher() {
     const handleHashChange = () => {
       if (window.location.hash !== "#about") {
         toggleComponent(
-          window.location.hash.slice(1, window.location.hash.length)
+          window.location.hash.slice(1, window.location.hash.length),
         );
       }
     };
@@ -53,7 +53,7 @@ export default function ComponentSwitcher() {
 
   return (
     <div className="mb-[5em]">
-      <div className="mb-[1.2em] text-[1.4em] font-bold leading-[normal] flex flex-row gap-5">
+      <div className="mb-[1.2em] flex flex-row gap-5 text-[1.4em] font-bold leading-[normal]">
         <button
           onClick={() => {
             if (activeComponent !== "experience") {

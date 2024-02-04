@@ -2,7 +2,7 @@ import Skills from "./Skills";
 
 export default function About() {
   return (
-    <section className="lg:scroll-mt-24 mb-[5em]" id="about">
+    <section className="mb-[5em] lg:scroll-mt-24" id="about">
       <div className="text-[1.2em] leading-[1.5] text-white/70">
         <p className="mb-[.8em]">
           Hi! I&apos;m Tomas, an aspiring Software Engineer living in Sweden.

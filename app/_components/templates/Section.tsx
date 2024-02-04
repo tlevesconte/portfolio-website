@@ -3,7 +3,7 @@ export default function Section({
   heading,
   children,
 }: {
-  id: string
+  id: string;
   heading: string;
   children: React.ReactNode;
 }) {
