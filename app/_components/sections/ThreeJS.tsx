@@ -18,10 +18,10 @@ export default function ThreeJS() {
               <IcosahedronDisplacement />
             </Canvas>
           </div>
-          <figcaption className="mt-2 text-[.8em] italic text-captionColour">
+          <figcaption className="mt-2 text-[.8em] italic text-white/50">
             Icosahedron Displacment, created with{" "}
             <a
-              className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
+              className="border-b border-dotted border-white text-white hover:bg-white/10"
               href="https://docs.pmnd.rs/react-three-fiber/getting-started/introduction"
               target="_blank"
               rel="noopener noreferrer"
@@ -40,10 +40,10 @@ export default function ThreeJS() {
               <AsciiTorus />
             </Canvas>
           </div>
-          <figcaption className="mt-2 text-[.8em] italic text-captionColour">
+          <figcaption className="mt-2 text-[.8em] italic text-white/50">
             Ascii Torus, created with{" "}
             <a
-              className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
+              className="border-b border-dotted border-white text-white hover:bg-white/10"
               href="https://docs.pmnd.rs/react-three-fiber/getting-started/introduction"
               target="_blank"
               rel="noopener noreferrer"
@@ -52,7 +52,7 @@ export default function ThreeJS() {
             </a>{" "}
             &{" "}
             <a
-              className="border-b border-dotted border-black text-highlightColour hover:bg-[#EBEBEB]"
+              className="border-b border-dotted border-white text-white hover:bg-white/10"
               href="https://github.com/pmndrs/three-stdlib"
               target="_blank"
               rel="noopener noreferrer"

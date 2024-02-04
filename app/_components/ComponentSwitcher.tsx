@@ -64,7 +64,7 @@ export default function ComponentSwitcher() {
           <h2
             className={
               activeComponent !== "experience"
-                ? "text-paragraphColour border-b border-dotted border-black hover:bg-[#EBEBEB]"
+                ? "border-b border-dotted border-white text-white/70 hover:bg-white/10"
                 : ""
             }
           >
@@ -81,7 +81,7 @@ export default function ComponentSwitcher() {
           <h2
             className={
               activeComponent !== "education"
-                ? "text-paragraphColour border-b border-dotted border-black hover:bg-[#EBEBEB]"
+                ? "border-b border-dotted border-white text-white/70 hover:bg-white/10"
                 : ""
             }
           >
@@ -98,7 +98,7 @@ export default function ComponentSwitcher() {
           <h2
             className={
               activeComponent !== "projects"
-                ? "text-paragraphColour border-b border-dotted border-black hover:bg-[#EBEBEB]"
+                ? "border-b border-dotted border-white text-white/70 hover:bg-white/10"
                 : ""
             }
           >

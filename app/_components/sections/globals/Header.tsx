@@ -13,26 +13,18 @@ export default function Header() {
         <h2 className="text-[1.15em] mb-[2.5em]">Software Engineer</h2>
 
         <nav className="flex-col hidden lg:flex">
-          <ul>
+          <ul className="text-white/70">
             <li className="mb-1">
-              <a className="text-paragraphColour" href="#about">
-                About
-              </a>
+              <a href="#about">About</a>
             </li>
             <li className="mb-1">
-              <a className="text-paragraphColour" href="#experience">
-                Experience
-              </a>
+              <a href="#experience">Experience</a>
             </li>
             <li className="mb-1">
-              <a className="text-paragraphColour" href="#education">
-                Education
-              </a>
+              <a href="#education">Education</a>
             </li>
             <li className="mb-1">
-              <a className="text-paragraphColour" href="#projects">
-                Projects
-              </a>
+              <a href="#projects">Projects</a>
             </li>
             {/* {sectionNames.map((sectionName, index) => (
               <li className="mb-1" key={index}>

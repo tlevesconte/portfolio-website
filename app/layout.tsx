@@ -1,17 +1,17 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 
 const sitka = localFont({
   src: "./sitka.ttf",
   display: "swap",
 });
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-});
+// const inter = Inter({
+//   subsets: ["latin"],
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Tomas Le Vesconte",
@@ -26,7 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${sitka.className}`}>{children}</body>
+      <body className={`${sitka.className} bg-[#181A1B] text-white`}>
+        {children}
+      </body>
     </html>
   );
 }

@@ -70,10 +70,10 @@ export default function Skills() {
 
   return (
     <>
-      <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-paragraphColour">
+      <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-white/60">
         Here are some of the tools and technologies I&apos;ve used recently:
       </p>
-      <div className="grid grid-cols-3 gap-y-6 sm:grid-cols-5 sm:gap-y-0 text-[.85em] justify-items-start gap leading-[1.5] text-paragraphColour">
+      <div className="grid grid-cols-3 gap-y-6 sm:grid-cols-5 sm:gap-y-0 text-[.85em] justify-items-start gap leading-[1.5] text-white/70">
         {skillsData.map((category, index) => (
           <ul key={index}>
             {category.items.map((item, itemIndex) => (
