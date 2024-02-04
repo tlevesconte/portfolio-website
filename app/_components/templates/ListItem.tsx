@@ -8,7 +8,7 @@ export default function ListItem({
   description: string;
 }) {
   return (
-    <li className="flex flex-col rounded border p-2 sm:flex-row">
+    <li className="flex flex-col rounded border border-white/30 p-2 sm:flex-row">
       <span className="min-w-[105px] font-bold text-white">{date}</span>
       <span className="mx-2 hidden text-white sm:block"> | </span>
       <div className="flex flex-col">
