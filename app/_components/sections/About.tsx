@@ -3,7 +3,7 @@ import Skills from "./Skills";
 export default function About() {
   return (
     <section className="mb-[5em] lg:scroll-mt-24" id="about">
-      <div className="text-[1.2em] leading-[1.5] text-white/70">
+      <div className="text-[1.2em] leading-[1.5] text-white/60">
         <p className="mb-[.8em]">
           Hi! I&apos;m Tomas, an aspiring Software Engineer living in Sweden.
           Passionate about web development, I thrive on challenging projects and
@@ -35,7 +35,7 @@ export default function About() {
           </a>{" "}
           and{" "}
           <a
-            className="border-b border-dotted border-white text-white hover:bg-white/10"
+            className="border-b border-dotted border-white text-white hover:bg-white/30"
             href="https://www.linkedin.com/in/tomas-levesconte/"
             target="_blank"
             rel="noopener noreferrer"
