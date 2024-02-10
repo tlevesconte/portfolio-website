@@ -1,5 +1,5 @@
-import List from "@/app/_components/templates/List";
-import ListItem from "@/app/_components/templates/ListItem";
+import List from "@/components/templates/List";
+import ListItem from "@/components/templates/ListItem";
 
 export default function Experience() {
   return (

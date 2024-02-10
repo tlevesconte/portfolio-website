@@ -2,8 +2,8 @@
 
 import { Canvas } from "@react-three/fiber";
 
-import AsciiTorus from "@/app/_components/3D/AsciiTorus";
-import IcosahedronDisplacement from "@/app/_components/3D/IcosahedronDisplacement";
+import AsciiTorus from "@/components/3D/AsciiTorus";
+import IcosahedronDisplacement from "@/components/3D/IcosahedronDisplacement";
 
 export default function ThreeJS() {
   return (

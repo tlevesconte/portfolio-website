@@ -1,7 +1,7 @@
-import Header from "@/app/_components/sections/globals/Header";
-import About from "@/app/_components/sections/About";
-import ComponentSwitcher from "@/app/_components/ComponentSwitcher";
-import Footer from "@/app/_components/sections/globals/Footer";
+import Header from "@/components/sections/Header";
+import About from "@/components/sections/About";
+import ComponentSwitcher from "@/components/ComponentSwitcher";
+import Footer from "@/components/sections/Footer";
 
 export default function Home() {
   return (

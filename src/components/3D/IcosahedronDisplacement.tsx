@@ -2,8 +2,8 @@ import { useFrame } from "@react-three/fiber";
 import React, { useRef, useMemo } from "react";
 
 // Shaders
-import fragmentShader from "@/app/_components/3D/shaders/FragmentShader";
-import vertexShader from "@/app/_components/3D/shaders/VertexShader";
+import fragmentShader from "@/shaders/FragmentShader";
+import vertexShader from "@/shaders/VertexShader";
 
 const IcosahedronDisplacement = () => {
   const meshRef = useRef<any>(null);

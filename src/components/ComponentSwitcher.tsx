@@ -1,8 +1,8 @@
 "use client";
 
-import Experience from "./sections/Experience";
-import Education from "./sections/Education";
-import Projects from "./sections/Projects";
+import Experience from "@/components/sections/Experience";
+import Education from "@/components/sections/Education";
+import Projects from "@/components/sections/Projects";
 
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
