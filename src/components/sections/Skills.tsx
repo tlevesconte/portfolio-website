@@ -31,6 +31,7 @@ export default function Skills() {
         { icon: <BiLogoJava />, name: "Java" },
         { icon: <PiFileSqlFill />, name: "SQL" },
         { icon: <BiLogoSpringBoot />, name: "Spring" },
+        { icon: <DiScrum />, name: "Scrum" },
       ],
     },
     {
@@ -40,6 +41,7 @@ export default function Skills() {
         { icon: <TbBrandNextjs />, name: "NextJS" },
         { icon: <BiLogoHtml5 />, name: "HTML" },
         { icon: <BiLogoCss3 />, name: "CSS" },
+        { icon: <TbLayoutKanban />, name: "Kanban" },
       ],
     },
     {
@@ -48,6 +50,7 @@ export default function Skills() {
         { icon: <DiMysql />, name: "MySQL" },
         { icon: <SiSanity />, name: "Sanity" },
         { icon: <BiLogoWordpress />, name: "Wordpress" },
+        { icon: <AiFillGitlab />, name: "GitLab" },
       ],
     },
     {
@@ -56,14 +59,7 @@ export default function Skills() {
         { icon: <SiTerraform />, name: "Terraform" },
         { icon: <SiJenkins />, name: "Jenkins" },
         { icon: <FaGitAlt />, name: "Git" },
-      ],
-    },
-    {
-      items: [
         { icon: <AiFillGithub />, name: "GitHub" },
-        { icon: <AiFillGitlab />, name: "GitLab" },
-        { icon: <DiScrum />, name: "Scrum" },
-        { icon: <TbLayoutKanban />, name: "Kanban" },
       ],
     },
   ];
@@ -73,7 +69,7 @@ export default function Skills() {
       <p className="mb-[.8em] text-[1.2em] leading-[1.5] text-white/60">
         Here are some of the tools and technologies I&apos;ve used recently:
       </p>
-      <div className="gap grid grid-cols-3 justify-items-start gap-y-6 text-[.85em] leading-[1.5] text-white/70 sm:grid-cols-5 sm:gap-y-0">
+      <div className="grid grid-cols-3 justify-items-start gap-y-6 text-[.85em] leading-[1.5] text-white/70 sm:grid-cols-5 sm:gap-y-0 gap-x-28">
         {skillsData.map((category, index) => (
           <ul key={index}>
             {category.items.map((item, itemIndex) => (
