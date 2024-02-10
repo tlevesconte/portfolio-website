@@ -6,7 +6,7 @@ export default function About() {
       <div className="text-[1.2em] leading-[1.5] text-white/60">
         <p className="mb-[.8em]">
           Hi! I&apos;m Tomas, an aspiring Software Engineer living in Sweden. In
-          my spare time, I enjoy running and working on personal projects. If
+          my spare time, I enjoy long-distance running and working on personal projects. If
           you&apos;d like to get in touch, you can reach me at{" "}
           <a
             className="border-b border-dotted border-white text-white hover:bg-white/10"
