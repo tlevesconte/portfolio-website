@@ -16,7 +16,7 @@ const sitka = localFont({
 export const metadata: Metadata = {
   title: "Tomas Le Vesconte",
   description:
-    "Hi! I'm Tomas, an aspiring Software Engineer living in Sweden. Passionate about web development, I thrive on challenging projects and love embracing new technologies.",
+    "Hi! I'm Tomas, an aspiring Software Engineer living in Sweden. In my spare time, I enjoy long-distance running and working on personal projects.",
 };
 
 export default function RootLayout({
