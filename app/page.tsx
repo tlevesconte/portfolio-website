@@ -1,6 +1,6 @@
 import Header from "@/components/sections/Header";
 import About from "@/components/sections/About";
-import ComponentSwitcher from "@/components/ComponentSwitcher";
+import ComponentSwitcher from "@/components/templates/ComponentSwitcher";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {

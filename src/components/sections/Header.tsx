@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Header() {
-  // const sectionNames = ["about", "experience", "education", "projects"];
-
   return (
     <header className="mb-[2.5em] lg:sticky lg:top-0 lg:mb-0 lg:flex lg:max-h-[99vh] lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div className="flex flex-col justify-center text-[1.2em]">
@@ -26,13 +24,6 @@ export default function Header() {
             <li className="mb-1">
               <a href="#projects">Projects</a>
             </li>
-            {/* {sectionNames.map((sectionName, index) => (
-              <li className="mb-1" key={index}>
-                <a className="text-paragraphColour" href={`#${sectionName}`}>
-                  {sectionName.charAt(0).toUpperCase() + sectionName.slice(1)}{" "}
-                </a>
-              </li>
-            ))} */}
           </ul>
         </nav>
       </div>
