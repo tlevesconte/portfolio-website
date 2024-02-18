@@ -4,7 +4,7 @@ export default function Header() {
   // const sectionNames = ["about", "experience", "education", "projects"];
 
   return (
-    <header className="mb-[2.5em] lg:sticky lg:top-0 lg:mb-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+    <header className="mb-[2.5em] lg:sticky lg:top-0 lg:mb-0 lg:flex lg:max-h-[99vh] lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div className="flex flex-col justify-center text-[1.2em]">
         <h1 className="text-[2em] font-bold leading-[normal]">
           Tomas Le Vesconte
