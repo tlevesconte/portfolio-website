@@ -10,9 +10,9 @@ export default function About() {
           {/* TODO: change to copy-to-clipboard (instead of mailto:) */}
           <a
             className="border-b border-dotted border-white text-white hover:bg-white/10"
-            href="mailto:tomas.levesconte@gmail.com"
+            href="mailto:tomas.levesconte@proton.me"
           >
-            tomas.levesconte@gmail.com
+            tomas.levesconte@proton.me
           </a>
           . You can also find me on{" "}
           <a
