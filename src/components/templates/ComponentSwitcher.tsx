@@ -7,6 +7,7 @@ import Projects from "@/components/sections/Projects";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
+// TODO: maybe remove each individual section and turn it into one singular section
 export default function ComponentSwitcher() {
   const [activeComponent, setActiveComponent] = useState<string>("projects");
   const [selectedComponent, setSelectedComponent] = useState<React.ReactNode>(

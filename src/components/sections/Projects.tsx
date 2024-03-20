@@ -9,6 +9,7 @@ export default function Projects() {
   return (
     <section className="lg:scroll-mt-24" id="projects">
       <div className="mt-[.8em]">
+        {/* TODO: make a template for these grid items (remove code duplication) */}
         <div className="grid grid-cols-3 gap-2">
           {/* Icosahedron Displacment (Grid Item 1) */}
           <figure>
