@@ -11,7 +11,22 @@ export default function Projects() {
       <div className="mt-[.8em]">
         {/* TODO: make a template for these grid items (remove code duplication) */}
         <div className="grid grid-cols-3 gap-2">
-          {/* Icosahedron Displacment (Grid Item 1) */}
+          {/* DW (Grid Item 1) */}
+          <figure>
+            <div className="h-full max-h-[160px] min-h-[160px] w-full rounded border bg-[#111111] object-cover shadow-lg">
+              <a 
+                href="https://danwallacedrummer.com"
+                target="_blank"
+                rel="noopener noreferrer">
+                  <img className="w-full h-full rounded object-cover" src="images/untitled1.png"/>
+              </a>
+            </div>
+            <figcaption className="mt-2 text-[.8em] italic text-white/50">
+              Dan Wallace Drummer, created for a client with <span className="text-white">NextJS</span>, <span className="text-white">Sanity</span> & <span className="text-white">TWCSS</span>
+            </figcaption>
+          </figure>
+
+          {/* Icosahedron Displacment (Grid Item 2) */}
           <figure>
             <div className="h-full max-h-[160px] min-h-[160px] w-full rounded border object-cover shadow-lg">
               <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
@@ -32,7 +47,7 @@ export default function Projects() {
             </figcaption>
           </figure>
 
-          {/* Ascii Torus (Grid Item 2) */}
+          {/* Ascii Torus (Grid Item 3) */}
           <figure>
             <div className="h-full max-h-[160px] min-h-[160px] w-full rounded border bg-[#111111] object-cover shadow-lg">
               <Canvas>
