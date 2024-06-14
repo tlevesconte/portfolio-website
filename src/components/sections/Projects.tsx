@@ -13,7 +13,7 @@ export default function Projects() {
         <div className="grid grid-cols-3 gap-2">
           {/* DW (Grid Item 1) */}
           <figure>
-            <div className="h-full max-h-[160px] min-h-[160px] w-full rounded border bg-[#111111] object-cover shadow-lg">
+            <div className="h-full max-h-[160px] min-h-[160px] w-full rounded border bg-[#111111] object-cover shadow-lg hover:brightness-110">
               <a 
                 href="https://danwallacedrummer.com"
                 target="_blank"
