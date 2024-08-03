@@ -5,14 +5,11 @@ export default function Home() {
       <header>
         <div className="flex flex-col justify-center text-[1.1em] text-white">
           <h1 className="mb-[.3em] text-[1.3em] font-bold leading-[normal]">
-            Hi,
+            Hi, I&apos;m Tomas.
           </h1>
-          <h2 className="mb-[.3em] text-[1.3em] font-bold leading-[normal]">
-            I&apos;m Tomas.
-          </h2>
-          <p className="text-white/70">
-          I&apos;m an aspiring Software Engineer living in Sweden. If you&apos;d like to get in touch, you can reach me
-            at{" "}
+          <p className="text-white/70 mb-[.3em]">
+            I&apos;m an aspiring Software Engineer living in Sweden. If
+            you&apos;d like to get in touch, you can reach me at{" "}
             <a
               className="border-b border-dotted border-white font-semibold text-white"
               href="mailto:tomas.levesconte@proton.me"
@@ -39,6 +36,9 @@ export default function Home() {
             </a>
             .
           </p>
+          <p className="text-white/70">
+            Wales → <b className="text-white">Sweden</b>
+          </p>
         </div>
       </header>
 
@@ -48,8 +48,16 @@ export default function Home() {
       {/* Main */}
       <main>
         <p className="text-[1.1em] text-white/70">
-          <a className="border-b border-dotted border-green-400 font-semibold text-green-400" href="https://danwallacedrummer.com" target="_blank" rel="noopener noreferrer">dwd</a> — a personal website I built for a client.<br />
-          More projects are on the way...
+          <a
+            className="border-b border-dotted border-green-400 font-semibold text-green-400"
+            href="https://danwallacedrummer.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            dwd
+          </a>{" "}
+          — a personal website I built for a client.
+          <br />
         </p>
       </main>
     </div>
