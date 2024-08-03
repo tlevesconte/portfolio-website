@@ -1,16 +1,56 @@
-import Header from "@/components/sections/Header";
-import About from "@/components/sections/About";
-import ComponentSwitcher from "@/components/templates/ComponentSwitcher";
-import Footer from "@/components/sections/Footer";
-
 export default function Home() {
   return (
-    <div className="mx-auto min-h-screen max-w-screen-2xl px-6 py-12 md:px-12 md:py-20 lg:flex lg:justify-between lg:gap-4 lg:px-24 lg:py-0">
-      <Header />
-      <main className="lg:w-1/2 lg:py-24">
-        <About />
-        <ComponentSwitcher />
-        <Footer />
+    <div>
+      {/* Header */}
+      <header>
+        <div className="flex flex-col justify-center text-[1.1em] text-white">
+          <h1 className="mb-[.3em] text-[1.3em] font-bold leading-[normal]">
+            Hi,
+          </h1>
+          <h2 className="mb-[.3em] text-[1.3em] font-bold leading-[normal]">
+            I&apos;m Tomas.
+          </h2>
+          <p className="text-white/70">
+          I'm an aspiring Software Engineer living in Sweden. If you&apos;d like to get in touch, you can reach me
+            at{" "}
+            <a
+              className="border-b border-dotted border-white font-semibold text-white"
+              href="mailto:tomas.levesconte@proton.me"
+            >
+              email
+            </a>
+            . You can also find me on{" "}
+            <a
+              className="border-b border-dotted border-white font-semibold text-white"
+              href="https://github.com/tlevesconte"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>{" "}
+            and{" "}
+            <a
+              className="border-b border-dotted border-white font-semibold text-white"
+              href="https://www.linkedin.com/in/tomas-levesconte/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            .
+          </p>
+        </div>
+      </header>
+
+      {/* Divider */}
+      <hr className="mb-[1.2em] mt-[1.2em]"></hr>
+
+      {/* Main */}
+      <main>
+        <p className="text-[1.1em] text-white/70">
+          <a className="border-b border-dotted border-green-400 font-semibold text-green-400" href="https://danwallacedrummer.com" target="_blank" rel="noopener noreferrer">dwd</a> — a personal website I built for a client.<br />
+          More projects are on the way...
+        </p>
       </main>
     </div>
   );

@@ -10,7 +10,7 @@ const sitka = localFont({
 export const metadata: Metadata = {
   title: "Tomas Le Vesconte",
   description:
-    "Hi! I'm Tomas, an aspiring Software Engineer living in Sweden. In my spare time, I enjoy long-distance running and working on personal projects.",
+    "Hi! I'm Tomas, an aspiring Software Engineer living in Sweden.",
 };
 
 export default function RootLayout({
@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${sitka.className} bg-[#181A1B] text-white`}>
+      <body className={`${sitka.className} px-[6%] mx-auto my-[18vmin] max-w-3xl bg-[#1F1F1F]`}>
         {children}
       </body>
     </html>
