@@ -11,7 +11,7 @@ export default function Home() {
             I&apos;m Tomas.
           </h2>
           <p className="text-white/70">
-          I'm an aspiring Software Engineer living in Sweden. If you&apos;d like to get in touch, you can reach me
+          I&apos;m an aspiring Software Engineer living in Sweden. If you&apos;d like to get in touch, you can reach me
             at{" "}
             <a
               className="border-b border-dotted border-white font-semibold text-white"
