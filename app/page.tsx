@@ -1,22 +1,22 @@
 export default function Home() {
   return (
-    <div>
-      {/* Header */}
+    <>
       <header>
         <div className="flex flex-col justify-center text-[1.1em] text-white">
           <h1 className="mb-[.3em] text-[1.3em] font-bold leading-[normal]">
-            Hi, I&apos;m Tomas.
+            {`Hi, I'm Tomas.`}
           </h1>
-          <p className="text-white/70 mb-[.3em]">
-            I&apos;m an aspiring Software Engineer living in Sweden. If
-            you&apos;d like to get in touch, you can reach me at{" "}
+
+          <p className="mb-[.3em] text-white/70">
+            {`I'm an aspiring Software Engineer living in Sweden. If
+            you'd like to get in touch, you can reach me at `}
             <a
               className="border-b border-dotted border-white font-semibold text-white"
               href="mailto:tomas.levesconte@proton.me"
             >
               email
             </a>
-            . You can also find me on{" "}
+            {`. You can also find me on `}
             <a
               className="border-b border-dotted border-white font-semibold text-white"
               href="https://github.com/tlevesconte"
@@ -24,8 +24,8 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               GitHub
-            </a>{" "}
-            and{" "}
+            </a>
+            {` and `}
             <a
               className="border-b border-dotted border-white font-semibold text-white"
               href="https://www.linkedin.com/in/tomas-levesconte/"
@@ -36,16 +36,15 @@ export default function Home() {
             </a>
             .
           </p>
+
           <p className="text-white/70">
             Wales → <b className="text-white">Sweden</b>
           </p>
         </div>
       </header>
 
-      {/* Divider */}
       <hr className="mb-[1.2em] mt-[1.2em]"></hr>
 
-      {/* Main */}
       <main>
         <p className="text-[1.1em] text-white/70">
           <a
@@ -55,11 +54,11 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             dwd
-          </a>{" "}
-          — a personal website I built for a client.
+          </a>
+          {` — a personal website I built for a client.`}
           <br />
         </p>
       </main>
-    </div>
+    </>
   );
 }

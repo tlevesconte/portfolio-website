@@ -17,7 +17,7 @@ const IcosahedronDisplacement = () => {
         value: 0.0,
       },
     }),
-    []
+    [],
   );
 
   useFrame((state) => {
