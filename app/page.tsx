@@ -10,7 +10,7 @@ export default function Home() {
           <p className="mb-[.3em] text-white/70">
             {`I'm an aspiring Software Engineer living in Sweden. If
             you'd like to get in touch, you can reach me at `}
-            <b className="text-white">tomas [dot] levesconte [at] proton [dot] me</b>
+            <span className="font-semibold text-white">tomas [dot] levesconte [at] proton [dot] me</span>
             {`. You can also find me on `}
             <a
               className="border-b border-dotted border-white font-semibold text-white"
